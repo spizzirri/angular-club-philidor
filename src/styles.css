@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* Here I adds expanses to bootrap media queries */
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+}
+  
+
+@media (min-width: 1800px) {
+    .container {
+      max-width: 1600px;
+    }
+  }

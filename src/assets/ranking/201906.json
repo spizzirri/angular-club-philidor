@@ -1,0 +1,21 @@
+[
+    { "name": "Marcelo", "surname": "Ducro", "country":"Argentina", "elo": { "classic": "2000", "rapid": "2000", "blitz": "2000" } },
+    { "name": "Pablo", "surname": "Solano", "country":"Argentina", "elo": { "classic": "1999", "rapid": "1999", "blitz": "1999" } },
+    { "name": "Carmelo", "surname": "Bova", "country":"Argentina", "elo": { "classic": "1998", "rapid": "1998", "blitz": "1998" } },
+    { "name": "Jorge", "surname": "Aguilar", "country":"Argentina", "elo": { "classic": "1997", "rapid": "1997", "blitz": "1997" } },
+    { "name": "Eduardo", "surname": "Doisenbant", "country":"Argentina", "elo": { "classic": "1996", "rapid": "1996", "blitz": "1996" } },
+    { "name": "Cristian", "surname": "Ayala", "country":"Argentina", "elo": { "classic": "1995", "rapid": "1995", "blitz": "1995" } },
+    { "name": "Lucrecia", "surname": "Sagodian", "country":"Argentina", "elo": { "classic": "1994", "rapid": "1994", "blitz": "1994" } },
+    { "name": "Nicolas", "surname": "Zweigart", "country":"Argentina", "elo": { "classic": "1993", "rapid": "1993", "blitz": "1993" } },
+    { "name": "Luis", "surname": "Ucha", "country":"Argentina", "elo": { "classic": "1992", "rapid": "1992", "blitz": "1992" } },
+    { "name": "Carlos", "surname": "Cabral", "country":"Argentina", "elo": { "classic": "1991", "rapid": "1991", "blitz": "1991" } },
+    { "name": "Alvaro", "surname": "Colque", "country":"Argentina", "elo": { "classic": "1990", "rapid": "1990", "blitz": "1990" } },
+    { "name": "Jorge", "surname": "Curbelo", "country":"Argentina", "elo": { "classic": "1989", "rapid": "1989", "blitz": "1989" } },
+    { "name": "Miguel", "surname": "Alija", "country":"Argentina", "elo": { "classic": "1988", "rapid": "1988", "blitz": "1988" } },
+    { "name": "Manuel", "surname": "Ardiles", "country":"Argentina", "elo": { "classic": "1987", "rapid": "1987", "blitz": "1987" } },
+    { "name": "Mateo", "surname": "Araujo", "country":"Argentina", "elo": { "classic": "1986", "rapid": "1986", "blitz": "1986" } },
+    { "name": "Federico", "surname": "Sinkus", "country":"Argentina", "elo": { "classic": "1985", "rapid": "1985", "blitz": "1985" } },
+    { "name": "Nahuel Mora", "surname": "Avena", "nacionalidad":"Argentina", "elo": { "classic": "1984", "rapid": "1984", "blitz": "1984" } },
+    { "name": "Nahun", "surname": "Soto", "country":"Argentina", "elo": { "classic": "1983", "rapid": "1983", "blitz": "1983" } },
+    { "name": "Hernan", "surname": "Rodriguez", "country":"Argentina", "elo": { "classic": "1982", "rapid": "1982", "blitz": "1982" } }
+]

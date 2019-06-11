@@ -1,0 +1,13 @@
+<div class="container">
+  <h2> Ultimas novedades </h2>
+
+  <div class="row">
+
+    <app-big-card *ngFor="let new of bigNews; let i=index" [data]="new" [id]="i"></app-big-card>
+
+  </div>
+
+
+  <app-small-card *ngFor="let new of smallNews; let i=index" [data]="new" [id]="i"></app-small-card>
+
+</div>
