@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { RankingService } from 'src/app/services/ranking.service';
-import { Player } from 'src/app/models/player';
+import { Row } from 'src/app/models/row';
 
 @Component({
   selector: 'app-table',
@@ -9,38 +9,18 @@ import { Player } from 'src/app/models/player';
 })
 export class TableComponent implements OnInit {
 
-  year:number;
-  month:number;
-
-  players:Array<Player>;
+  @Input('tableHeader') tableHeader:Row;
+  @Input('tableRows') tableRows:Array<Row>;
 
   constructor(
     private rankingService:RankingService
   ) { }
 
   ngOnInit() {
-
-    this.year = 2019;
-    this.month = 6;
-
-    this.getRanking()
-
+    
   }
 
-  showPlayer(player:Player){
-    this.rankingService.setCurrentPlayer(player);
-  }
-
-  getRanking(){
-
-    this.rankingService.getRanking(this.year, this.month).subscribe(
-      (data:Array<Player>)=>{
-          this.players = data
-          console.log(this.players);
-      },
-      error => {
-        this.players = new Array<Player>()
-      }
-    )
+  showPlayer(row:Row){
+    this.rankingService.setCurrentPlayer(row);
   }
 }

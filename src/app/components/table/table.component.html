@@ -1,22 +1,22 @@
 <div class="table-wrapper-scroll-y my-custom-scrollbar">
   <table class="table table-hover">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Clasico</th>
-          <th scope="col">Rapido</th>
-          <th scope="col">Blitz</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let player of players; let i=index">
-          <th scope="row" >{{ i }}</th>
-          <td (click)="showPlayer(player)">{{ player.surname }}, {{ player.name }}</td>
-          <td>{{ player.elo.classic }}</td>
-          <td>{{ player.elo.rapid }}</td>
-          <td>{{ player.elo.blitz }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">{{ tableHeader?.column1 }}</th>
+        <th scope="col">{{ tableHeader?.column2 }}</th>
+        <th scope="col">{{ tableHeader?.column3 }}</th>
+        <th scope="col">{{ tableHeader?.column4 }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableRows; let i=index">
+        <th scope="row" >{{ i }}</th>
+        <td (click)="showPlayer(row)">{{ row.column1 }}</td>
+        <td>{{ row.column2 }}</td>
+        <td>{{ row.column3 }}</td>
+        <td>{{ row.column4 }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

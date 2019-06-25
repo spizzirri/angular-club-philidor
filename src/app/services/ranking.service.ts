@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { Player } from '../models/player';
+import { Row } from '../models/row';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +14,9 @@ export class RankingService {
     private http:HttpClient
   ) { }
 
-  setCurrentPlayer(player:Player){
-    this.subject.next(player);
-    console.log('setCurrentPlayer: ', player)
+  setCurrentPlayer(row:Row){
+    this.subject.next(row);
+    console.log('setCurrentRow: ', row)
   }
 
   getRanking(year:number, month:number):Observable<Object>{

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RankingService } from 'src/app/services/ranking.service';
-import { Player } from 'src/app/models/player';
+import { Row } from 'src/app/models/row';
 
 @Component({
   selector: 'app-player',
@@ -9,7 +9,7 @@ import { Player } from 'src/app/models/player';
 })
 export class PlayerComponent implements OnInit {
 
-  player:Player;
+  rowDetail:Row;
 
   constructor(
     private rankingService:RankingService
@@ -19,7 +19,7 @@ export class PlayerComponent implements OnInit {
 
     this.rankingService.subject.subscribe(
       (data)=>{
-        this.player = data;
+        this.rowDetail = data;
       }
     )
   }
