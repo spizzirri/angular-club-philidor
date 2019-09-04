@@ -1,7 +1,9 @@
 <div *ngIf="rowDetail" class="card" style="width: 18rem;">
-  <img [src]="rowDetail?.image" class="card-img-top" alt="...">
-  <div class="card-body">
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <img [src]="rowDetail?.image" class="card-img-top" alt="...">
+    <div class="card-body">
       <h5 class="card-title">{{ rowDetail?.column1 }}</h5>
-    <p class="card-text"> {{ rowDetail?.country }} </p>
+      <p class="card-text"> {{ rowDetail?.country }} </p>
+    </div>
   </div>
 </div>

@@ -8,16 +8,14 @@ import { BigCard } from 'src/app/models/big-card';
 })
 export class BigCardComponent implements OnInit {
 
-  @Input("data") data:BigCard;
-  @Input("id") id:number;
+  @Input("data") data: BigCard;
+  @Input("id") id: number;
 
-  constructor() { 
-
-    console.log('bigCard: ', this.data);
-    console.log('bigCard: ',this.id);
-  }
+  constructor() { }
 
   ngOnInit() {
+    console.log('bigCard: ', this.data);
+    console.log('bigCard: ', this.id);
   }
 
 }

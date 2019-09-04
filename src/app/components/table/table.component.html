@@ -1,4 +1,4 @@
-<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<div class="table-wrapper-scroll-y my-custom-scrollbar animated slideInLeft">
   <table class="table table-hover">
     <thead class="thead-light">
       <tr>
@@ -10,9 +10,9 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let row of tableRows; let i=index">
-        <th scope="row" >{{ i }}</th>
-        <td (click)="showPlayer(row)">{{ row.column1 }}</td>
+      <tr *ngFor="let row of tableRows; let i=index" (click)="showPlayer(row)">
+        <th scope="row">{{ i }}</th>
+        <td>{{ row.column1 }}</td>
         <td>{{ row.column2 }}</td>
         <td>{{ row.column3 }}</td>
         <td>{{ row.column4 }}</td>
