@@ -3,11 +3,13 @@
 
   <div class="row">
 
-    <app-big-card *ngFor="let new of bigNews; let i=index" [data]="new" [id]="i"></app-big-card>
+    <app-big-card class="col-md-6 col-xs-12" *ngFor="let new of bigNews; let i=index" [data]="new" [id]="i">
+    </app-big-card>
 
   </div>
 
 
-  <app-small-card *ngFor="let new of smallNews; let i=index" [data]="new" [id]="i"></app-small-card>
+  <app-small-card class="col-md-6 col-xs-12" *ngFor="let new of smallNews; let i=index" [data]="new" [id]="i">
+  </app-small-card>
 
 </div>

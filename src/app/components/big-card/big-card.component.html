@@ -1,11 +1,10 @@
-<div class="card m-3 animated" [ngClass]="{'bounceInRight': id%2 === 0, 'bounceInLeft': id%2 !== 0 }"
-  style="max-width: 700px;">
+<div class="card m-3 animated" [ngClass]="{'bounceInRight': id%2 === 0, 'bounceInLeft': id%2 !== 0 }">
   <div class="shadow p-3 mb-5 bg-white rounded">
     <div class="row no-gutters">
-      <div class="col-md-6">
+      <div class="col-6">
         <img [src]="data.imgSrc" class="card-img-top" alt="...">
       </div>
-      <div class="col-md-6">
+      <div class="col-6">
         <div class="card-body">
           <h5 class="card-title">{{ data.title }}</h5>
           <p class="card-text"> {{ data.text }} </p>
