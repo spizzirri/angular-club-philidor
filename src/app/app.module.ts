@@ -16,6 +16,7 @@ import { TableComponent } from './components/table/table.component';
 import { RankingService } from './services/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './services/news.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NewsService } from './services/news.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     NewsService,

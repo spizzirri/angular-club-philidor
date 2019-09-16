@@ -11,47 +11,42 @@ import { Row } from 'src/app/models/row';
 })
 export class RankingComponent implements OnInit {
 
-  year:number;
-  month:number;
-
-  players:Array<Player>;
-  tableRows = new Array<Row>();
-  tableHeader:Row = {  column1: "Nombre", column2: "Clasico", column3: "Rapido", column4: "Relampago", image: null, country: null}
+  nameToFind: string = null;
+  year: number;
+  month: number;
+  people: Array<Player>;
 
   constructor(
-    private rankingService:RankingService
+    private rankingService: RankingService
   ) { }
 
   ngOnInit() {
 
     this.year = 2019;
-    this.month = 6; 
+    this.month = 6;
     this.getRanking()
 
   }
 
-  getRanking(){
+  checkRow(row: Player) {
+    const playerRow: string = JSON.stringify(row).toLowerCase();
+    if (this.nameToFind && playerRow.search(this.nameToFind.toLowerCase()) < 0)
+      return false
+    return true;
+  }
+
+  addBadgeByNumber(number: number) {
+    if (number > 0)
+      return "badge badge-success";
+    else
+      return "badge badge-danger";
+  }
+
+  getRanking() {
 
     this.rankingService.getRanking(this.year, this.month).subscribe(
-      (data:Array<Player>)=>{
-          this.players = data
-          data.forEach(
-            (elem)=>{
-              this.tableRows.push({ "column1": `${elem.surname},${elem.name}`, 
-                                    "column2": elem.elo.classic.toString(),
-                                    "column3": elem.elo.rapid.toString(), 
-                                    "column4": elem.elo.blitz.toString(),
-                                    "image": elem.image,
-                                    "country": elem.country  
-                                  })
-            }
-          )
-      },
-      error => {
-        this.players = new Array<Player>();
-        this.tableRows = new Array<Row>();
-        this.tableHeader = null;
-      }
+      (data: Array<Player>) => this.people = data,
+      error => this.people = new Array<Player>()
     )
   }
 }
