@@ -1,12 +1,42 @@
 {
     "bigNews": [
-        { "title": "Torneo 1", "imgSrc": "../../../assets/images/news/new01.jpg", "text": "lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1", "date": "2019-05-05" },
-        { "title": "Torneo 2", "imgSrc": "../../../assets/images/news/new02.jpg", "text": "lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2", "date": "2019-05-05"  },
-        { "title": "Torneo 3", "imgSrc": "../../../assets/images/news/new03.jpg", "text": "lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3", "date": "2019-05-05" },
-        { "title": "Torneo 4", "imgSrc": "../../../assets/images/news/new04.jpg", "text": "lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4lorem4", "date": "2019-05-05" }
+        {
+            "title": "Abierto primavera",
+            "imgSrc": "../../../assets/images/news/torneo-abierto-primavera.jpg",
+            "text": "lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1",
+            "date": "2019-05-05"
+        },
+        {
+            "title": "Dupla",
+            "imgSrc": "../../../assets/images/news/torneo-dupla.jpg",
+            "text": "lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2",
+            "date": "2019-05-05"
+        },
+        {
+            "title": "Rapido primavera",
+            "imgSrc": "../../../assets/images/news/torneo-rapido-primavera.jpg",
+            "text": "lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3",
+            "date": "2019-05-05"
+        },
+        {
+            "title": "Torneo 4",
+            "imgSrc": "../../../assets/images/news/new04.jpg",
+            "text": "",
+            "date": "2019-05-05"
+        }
     ],
-    "smallNews":[
-        { "title": "Nota 1", "imgSrc":"", "text": "lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5", "date":"" },
-        { "title": "Nota 1", "imgSrc":"", "text": "lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6", "date":"" }
+    "smallNews": [
+        {
+            "title": "Nota 1",
+            "imgSrc": "",
+            "text": "lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5lorem5",
+            "date": ""
+        },
+        {
+            "title": "Nota 1",
+            "imgSrc": "",
+            "text": "lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6lorem6",
+            "date": ""
+        }
     ]
 }

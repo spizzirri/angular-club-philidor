@@ -28,7 +28,7 @@ export class RankingComponent implements OnInit {
 
   }
 
-  checkRow(row: Player) {
+  checkByWord(row: Player) {
     const playerRow: string = JSON.stringify(row).toLowerCase();
     if (this.nameToFind && playerRow.search(this.nameToFind.toLowerCase()) < 0)
       return false
@@ -45,7 +45,7 @@ export class RankingComponent implements OnInit {
   getRanking() {
 
     this.rankingService.getRanking(this.year, this.month).subscribe(
-      (data: Array<Player>) => this.people = data,
+      (data: Array<Player>) => this.people = data.sort((a: Player, b: Player): number => a.ranking.classic > b.ranking.classic ? 1 : -1),
       error => this.people = new Array<Player>()
     )
   }
