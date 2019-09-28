@@ -8,11 +8,16 @@ import { Observable } from 'rxjs';
 export class NewsService {
 
   constructor(
-    private http:HttpClient
+    private http: HttpClient
   ) { }
 
-  getNews():Observable<Object>{
+  getNews(): Observable<Object> {
 
     return this.http.get('../../assets/news/201906-s1.json');
+  }
+
+  getSchoolNews(): Observable<Object> {
+
+    return this.http.get('../../assets/school/201906-s1.json');
   }
 }

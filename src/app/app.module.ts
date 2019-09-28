@@ -17,6 +17,7 @@ import { RankingService } from './services/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './services/news.service';
 import { FormsModule } from '@angular/forms';
+import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     BigCardComponent,
     SmallCardComponent,
     PlayerComponent,
-    TableComponent
+    TableComponent,
+    EscuelitaComponent
   ],
   imports: [
     BrowserModule,

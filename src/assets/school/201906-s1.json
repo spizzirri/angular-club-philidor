@@ -1,0 +1,28 @@
+{
+    "bigNews": [
+        {
+            "title": "Abierto primavera",
+            "imgSrc": "../../../assets/images/school/001.jpg",
+            "text": "lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1lorem1",
+            "date": "2019-05-05"
+        },
+        {
+            "title": "Dupla",
+            "imgSrc": "../../../assets/images/school/002.jpg",
+            "text": "lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2lorem2",
+            "date": "2019-05-05"
+        },
+        {
+            "title": "Rapido primavera",
+            "imgSrc": "../../../assets/images/school/003.jpg",
+            "text": "lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3lorem3",
+            "date": "2019-05-05"
+        },
+        {
+            "title": "Torneo 4",
+            "imgSrc": "../../../assets/images/school/004.jpg",
+            "text": "",
+            "date": "2019-05-05"
+        }
+    ]
+}
