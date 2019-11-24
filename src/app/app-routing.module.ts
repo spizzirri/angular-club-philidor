@@ -10,7 +10,7 @@ import { environment } from '../environments/environment';
  
 const routesDevelop: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'tournament/:type', component: TournamentsComponent },
+  { path: 'tournament', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'photos', component: PhotosComponent },
   { path: 'history', component: HistoryComponent },
@@ -21,6 +21,7 @@ const routesDevelop: Routes = [
 
 const routesProd: Routes = [
   { path: 'home', component: RankingComponent },
+  { path: 'tournament', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'history', component: HistoryComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },

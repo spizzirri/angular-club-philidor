@@ -1,3 +1,23 @@
-<p>
-  Torneos {{ timeControl }}
-</p>
+<div class="row">
+<section class="col-sm-12 col-md-3">
+  <ul class="nav flex-column">
+    <li class="nav-item" *ngFor="let torneo of torneos">
+      <a class="nav-link" routerLink="/tournament" (click)="cambiarIFrame(torneo.link)">{{torneo.nombre}}</a>
+    </li>
+  </ul>
+</section>
+
+<article class="col-md-9">
+<IFRAME
+  height="1000px" 
+  width="90%" 
+  frameborder ="0" 
+  marginwidth="1" 
+  marginheight ="1" 
+  scrolling="auto"
+  [attr.SRC]="linkTorneoActual"
+  title="Turnier xxxx" > Your browser does not support inline frames or is currently configured not to display inline frames. 
+</IFRAME>
+
+</article>
+</div>

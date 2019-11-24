@@ -10,16 +10,8 @@
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionEscuelita" >
         <a class="nav-link" routerLink="/escuelita" routerLinkActive="active">Escuelita</a>
       </li>
-      <li class="nav-item dropdown" *ngIf="mostrarEnProduccion.opcionTorneos">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Torneos
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" [routerLink]="['/tournament','classic']">Pensados</a>
-          <a class="dropdown-item" [routerLink]="['/tournament','rapid']">Rapidos</a>
-          <a class="dropdown-item" [routerLink]="['/tournament','blitz']">Relampagos</a>
-        </div>
+      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionTorneos">
+        <a class="nav-link" routerLink="/tournament" routerLinkActive="active">Torneos</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionRanking">
         <a class="nav-link" routerLink="/ranking" routerLinkActive="active">Ranking</a>
