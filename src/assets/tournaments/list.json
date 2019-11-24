@@ -1,22 +1,86 @@
-[
-    {
-        "nombre": "FINAL FAOGBA EDICION 36",
-        "link":"tnr482115"
-    },
-    {
-        "nombre": "TORNEO RAPIDO NOVIEMBRE II",
-        "link":"tnr487824"
-    },
-    {
-        "nombre": "SIMULTANEAS SUB-2000 M.I. LUCAS CORO",
-        "link":"tnr482938"
-    },
-    {
-        "nombre": "BLITZ ESPECIAL MARTES",
-        "link":"tnr484593."
-    },
-    {
-        "nombre": "TORNEO RAPIDO",
-        "link":"tnr485613"
-    }
-]
+{
+    "philidor":[
+        {
+            "nombre": "TORNEO RAPIDO NOVIEMBRE II",
+            "link":"tnr487824"
+        },
+        {
+            "nombre": "SIMULTANEAS SUB-2000 M.I. LUCAS CORO",
+            "link":"tnr482938"
+        },
+        {
+            "nombre": "BLITZ ESPECIAL MARTES",
+            "link":"tnr484593."
+        },
+        {
+            "nombre": "TORNEO RAPIDO NOVIEMBRE I",
+            "link":"tnr485613"
+        },
+        {
+            "nombre":"5ª TORNEO ABIERTO FEMENINO ZONA B",
+            "link":"tnr483197"
+        },
+        {
+            "nombre":"5ª TORNEO ABIERTO FEMENINO ZONA B",
+            "link":"tnr483198"
+        },
+        {
+            "nombre":"3RA CATEGORIA FASE III",
+            "link":"tnr476021"
+        },
+        {
+            "nombre":"4TA CATEGORIA CLUB PHILIDOR",
+            "link":"tnr475974"
+        },
+        {
+            "nombre":"1RA Y 2DA CAT. FASE III MARTIN SCIORRA",
+            "link":"tnr475970"
+        },
+        {
+            "nombre":"II GRAN TORNEO POR EQUIPOS 3 TABLEROS",
+            "link":"tnr480754"
+        },
+        {
+            "nombre":"ABIERTO DE PRIMAVERA 2019",
+            "link":"tnr474774"
+        },
+        {
+            "nombre":"BLITZ DE LA DIVERSIDAD 2019",
+            "link":"tnr479391"
+        },
+        {
+            "nombre":"1ER RAPIDO ESPECIAL DE OCTUBRE",
+            "link":"tnr477363"
+        }
+    ],
+    "faogba":[
+        {
+            "nombre": "FINAL FAOGBA EDICION 36",
+            "link":"tnr482115"
+        },
+        {
+            "nombre":"Final Faogba JUVENIL-INFANTIL 2019 Categoria Sub10",
+            "link":"tnr491288"
+        },
+        {
+            "nombre":"Final Faogba JUVENIL-INFANTIL 2019 Categoria Sub 12",
+            "link":"tnr491289"
+        },
+        {
+            "nombre":"Final Faogba JUVENIL-INFANTIL 2019 Categoria Sub14",
+            "link":"tnr491290"
+        },
+        {
+            "nombre":"Final Faogba JUVENIL-INFANTIL 2019 Categoria Sub 8",
+            "link":"tnr492005"
+        },
+        {
+            "nombre":"Final Faogba JUVENIL-INFANTIL 2019 Categoria Sub-20",
+            "link":"tnr491291"
+        },
+        {
+            "nombre":"Final Faogba JUVENIL-INFANTIL 2019",
+            "link":"tnr490258"
+        }
+    ]
+}

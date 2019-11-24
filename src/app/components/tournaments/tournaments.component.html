@@ -1,16 +1,51 @@
 <div class="row">
 <section class="col-sm-12 col-md-3">
-  <ul class="nav flex-column">
-    <li class="nav-item" *ngFor="let torneo of torneos">
-      <a class="nav-link" routerLink="/tournament" (click)="cambiarIFrame(torneo.link)">{{torneo.nombre}}</a>
-    </li>
-  </ul>
+  <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              PHILIDOR
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <ul class="nav flex-column">
+              <li class="nav-item" *ngFor="let torneo of torneosPhilidor">
+                <a class="nav-link" routerLink="/tournament" (click)="cambiarIFrame(torneo.link)">{{torneo.nombre}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              FAOGBA
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <ul class="nav flex-column">
+              <li class="nav-item" *ngFor="let torneo of torneosFAOGBA">
+                <a class="nav-link" routerLink="/tournament" (click)="cambiarIFrame(torneo.link)">{{torneo.nombre}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 
 <article class="col-md-9">
 <IFRAME
-  height="1000px" 
-  width="90%" 
+  height="1400px" 
+  width="80%" 
   frameborder ="0" 
   marginwidth="1" 
   marginheight ="1" 
