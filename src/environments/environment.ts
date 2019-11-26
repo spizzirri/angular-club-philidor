@@ -8,6 +8,7 @@ export const environment = {
   opcionTorneos:true,
   opcionFotos:true,
   opcionRanking:true,
+  opcionChesscoin:true,
   opcionHistoria:true,
   opcionContacto:true
 };

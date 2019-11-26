@@ -1,19 +1,15 @@
 <div class="container">
 
+  <h1> Listado de Ranking Philidor </h1>
+  <div class="text-center alert alert-info"> 
+      Datos actualizados al 30 de Junio de 2019
+  </div> 
+
   <div class="row">
     <div class="col-md-4 col-sm-12">
-      <label for="name">Nombre: </label>
-      <input type="text" [(ngModel)]="nameToFind" name="name" id="name" />
+      <label class="m-2" for="name">Buscar </label>
+      <input type="text" [(ngModel)]="nameToFind" placeholder="Escribe tu nombre" name="name" id="name" />
     </div>
-    <!--<div class="col-md-8 col-sm-12">
-      <div class="form-check form-check-inline col-md-1 col-sm-5"
-        *ngFor="let radio of ['todas', 'superior', '1ra', '2da', '3ra', '4ta']">
-        <input class="form-check-input" type="radio" name="categories" id={{radio}} value="0" checked>
-        <label class="form-check-label" for={{radio}}>
-          {{radio}}
-        </label>
-      </div>
-    </div>-->
   </div>
 
   <div class="row">
@@ -31,7 +27,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let one of people; let i=index" (click)="showPlayer (row)">
+            <tr *ngFor="let one of people; let i=index" (click)="showPlayer(row)">
               <ng-container *ngIf="checkByWord(one)">
                 <th scope="row">{{ i }}</th>
                 <td>{{ one.surname }}, {{ one.name }}</td>

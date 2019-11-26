@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './services/news.service';
 import { FormsModule } from '@angular/forms';
 import { EscuelitaComponent } from './components/escuelita/escuelita.component';
+import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EscuelitaComponent } from './components/escuelita/escuelita.component';
     SmallCardComponent,
     PlayerComponent,
     TableComponent,
-    EscuelitaComponent
+    EscuelitaComponent,
+    ChesscoinComponent
   ],
   imports: [
     BrowserModule,

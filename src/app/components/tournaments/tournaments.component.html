@@ -10,7 +10,7 @@
           </h5>
         </div>
     
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
             <ul class="nav flex-column">
               <li class="nav-item" *ngFor="let torneo of torneosPhilidor">
@@ -50,6 +50,8 @@
   marginwidth="1" 
   marginheight ="1" 
   scrolling="auto"
+  onerror="alert('Ocurrio un error al cargar los datos')"
+  onload="console.log('Datos cargados')"
   [attr.SRC]="linkTorneoActual"
   title="Turnier xxxx" > Your browser does not support inline frames or is currently configured not to display inline frames. 
 </IFRAME>

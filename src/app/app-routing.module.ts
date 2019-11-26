@@ -7,11 +7,13 @@ import { RankingComponent } from './components/ranking/ranking.component';
 import { HistoryComponent } from './components/history/history.component';
 import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { environment } from '../environments/environment';
+import { ChesscoinComponent } from './chesscoin/chesscoin.component';
  
 const routesDevelop: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
+  { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'photos', component: PhotosComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'escuelita', component: EscuelitaComponent },
@@ -20,9 +22,10 @@ const routesDevelop: Routes = [
 ];
 
 const routesProd: Routes = [
-  { path: 'home', component: RankingComponent },
+  { path: 'home', component: ChesscoinComponent },
   { path: 'tournament', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
+  { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'history', component: HistoryComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent }

@@ -1,0 +1,45 @@
+<div class="container">
+
+    <h1> Listado de ChessCoin </h1>
+
+    <div class="text-center alert alert-info"> 
+       Datos actualizados al 25 de Noviembre de 2019
+    </div> 
+    
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <label class="m-2" for="name"> Buscar </label>
+        <input type="text" [(ngModel)]="nameToFind" placeholder="Escribe tu nombre" name="name" id="name" />
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-10 col-sm-12">
+        <div class="animated slideInLeft">
+          <table class="table table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">ChessCoin </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let one of people; let i=index" (click)="showPlayer(row)">
+                <ng-container *ngIf="checkByWord(one)">
+                  <th scope="row">{{ i }}</th>
+                  <td>{{ one.name }}</td>
+                  <td>{{ one.chesscoin }}</td>
+                </ng-container>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <div class="col-md-2 col-sm-12">
+        <app-player></app-player>
+      </div>
+
+    </div>
+  </div>
