@@ -29,7 +29,7 @@
                 <ng-container *ngIf="checkByWord(one)">
                   <th scope="row">{{ i }}</th>
                   <td>{{ one.name }}</td>
-                  <td>{{ one.chesscoin }}</td>
+                  <td>{{ one.chesscoin < 0? 0: one.chesscoin }}</td>
                 </ng-container>
               </tr>
             </tbody>
