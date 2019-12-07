@@ -43,7 +43,13 @@
 </section>
 
 <article class="col-md-9">
-<IFRAME
+<div id="spinner" class="text-center" *ngIf="mostrarSpinner">
+    <strong>Cargando...</strong>
+    <div class="spinner-border text-primary" style="width: 15rem; height: 15rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<IFRAME #iframe
   height="1400px" 
   width="80%" 
   frameborder ="0" 
@@ -51,7 +57,7 @@
   marginheight ="1" 
   scrolling="auto"
   onerror="alert('Ocurrio un error al cargar los datos')"
-  onload="console.log('Datos cargados')"
+  (load)="setMostrarSpinner(false)"
   [attr.SRC]="linkTorneoActual"
   title="Turnier xxxx" > Your browser does not support inline frames or is currently configured not to display inline frames. 
 </IFRAME>

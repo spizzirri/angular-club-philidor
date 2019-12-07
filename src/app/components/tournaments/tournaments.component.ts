@@ -13,8 +13,9 @@ export class TournamentsComponent implements OnInit {
   torneosPhilidor:Array<Torneo>;
   torneosFAOGBA:Array<Torneo>;
   linkTorneoActual:string;
-
+  mostrarSpinner:Boolean;
   constructor(private tournamentService:TournamentService, private sanitizer:DomSanitizer) { 
+    this.mostrarSpinner = false;
     this.torneosPhilidor = new Array<Torneo>();
     this.torneosFAOGBA = new Array<Torneo>();
     this.sanitizer = sanitizer;
@@ -35,11 +36,16 @@ export class TournamentsComponent implements OnInit {
       );
   }
 
+  setMostrarSpinner(estado:Boolean){
+    this.mostrarSpinner = estado;
+  }
+
   urlSafe(url:string):SafeUrl{
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   cambiarIFrame(linkTorneoSeleccionado:string){
+    this.setMostrarSpinner(true);
     this.linkTorneoActual = linkTorneoSeleccionado;
   }
 
