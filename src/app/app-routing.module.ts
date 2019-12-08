@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, Router } from '@angular/router';
-import { TournamentsComponent } from './components/tournaments/tournaments.component';
+import { Routes, RouterModule } from '@angular/router';
+import { TournamentsComponent } from './tournaments/tournaments.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { HomeComponent } from './components/home/home.component';
 import { RankingComponent } from './components/ranking/ranking.component';

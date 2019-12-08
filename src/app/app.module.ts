@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PhotosComponent } from './components/photos/photos.component';
-import { TournamentsComponent } from './components/tournaments/tournaments.component';
+import { TournamentsComponent } from './tournaments/tournaments.component';
 import { RankingComponent } from './components/ranking/ranking.component';
 import { HistoryComponent } from './components/history/history.component';
 import { BigCardComponent } from './components/big-card/big-card.component';
