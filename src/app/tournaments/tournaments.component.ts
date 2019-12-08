@@ -12,12 +12,14 @@ export class TournamentsComponent implements OnInit {
 
   torneosPhilidor:Array<Torneo>;
   torneosFAOGBA:Array<Torneo>;
+  torneosInternacionales:Array<Torneo>;
   linkTorneoActual:string;
   mostrarSpinner:Boolean;
   constructor(private tournamentService:TournamentService, private sanitizer:DomSanitizer) { 
     this.mostrarSpinner = false;
     this.torneosPhilidor = new Array<Torneo>();
     this.torneosFAOGBA = new Array<Torneo>();
+    this.torneosInternacionales = new Array<Torneo>();
     this.sanitizer = sanitizer;
     this.tournamentService.obtenerTorneos()
       .subscribe((data)=> {
@@ -32,6 +34,11 @@ export class TournamentsComponent implements OnInit {
             ...torneo, 
             link:this.sanitizer.bypassSecurityTrustResourceUrl(`https://chess-results.com/${torneo.link}.aspx?lan=2&art=1&wi=700&iframe=YES&css=2&lansel=YES`) }
           });
+        this.torneosInternacionales = data.internacionales.map((torneo)=> { 
+          return { 
+            ...torneo, 
+            link:this.sanitizer.bypassSecurityTrustResourceUrl(`https://chess-results.com/${torneo.link}.aspx?lan=2&art=1&wi=700&iframe=YES&css=2&lansel=YES`) }
+          });  
         }
       );
   }

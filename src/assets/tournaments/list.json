@@ -1,6 +1,10 @@
 {
     "philidor":[
         {
+            "nombre": "TORNEO RAPIDO DE DICIEMBRE I",
+            "link":"tnr496653"
+        },
+        {
             "nombre": "TORNEO DE FIN DE AÑO 2019 1ra Y 2da CATEGORIA",
             "link":"tnr495007"
         },
@@ -93,6 +97,12 @@
         {
             "nombre":"Final Faogba JUVENIL-INFANTIL 2019",
             "link":"tnr490258"
+        }
+    ],
+    "internacionales":[
+        {
+            "nombre":"II TORNEO CASTILLO DEL PARQUE RODO",
+            "link": "tnr486591"
         }
     ]
 }
