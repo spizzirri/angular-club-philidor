@@ -1,0 +1,37 @@
+{
+    "noticias": [
+        {
+            "titulo": "Comenzo el ultimo torneo pensado del 2019",
+            "imgSrc": ["../../../assets/imagenes/noticias/fin-de-anio-2019-1.jpg",
+                "../../../assets/imagenes/noticias/fin-de-anio-2019-1.jpg",
+                "../../../assets/imagenes/noticias/fin-de-anio-2019-1.jpg"],
+            "texto": "",
+            "fecha": "2019-12-08"
+        },
+        {
+            "titulo": "Uruguay",
+            "imgSrc": ["../../../assets/imagenes/noticias/uruguay-diciembre-2019-2.jpg",
+                "../../../assets/imagenes/noticias/uruguay-diciembre-2019-2.jpg",
+                "../../../assets/imagenes/noticias/uruguay-diciembre-2019-3.jpg"],
+            "texto": "Muchos de nuestros amigos nos estuvieron representando del otro lado del charco. Mira como les fue",
+            "link": "http://chess-results.com/tnr486591.aspx?lan=2&art=1&rd=6&turdet=YES&flag=30&fbclid=IwAR0YuqEkRRqAwJTviWHN30oYGv3ZfRp6jekbstpQNmlusLMDiPD4tNT-tug",
+            "fecha": "2019-12-08"
+        },
+        {
+            "titulo": "Comenzaron los Rapidos de Diciembre",
+            "imgSrc": ["../../../assets/imagenes/noticias/rapido-diciembre-i-2019-1.jpg",
+                "../../../assets/imagenes/noticias/rapido-diciembre-i-2019-2.jpg",
+                "../../../assets/imagenes/noticias/rapido-diciembre-i-2019-3.jpg"],
+            "texto": "Como todos los meses, comenzaron los torneos rapidos. Consultanos por Whatsapp y te anotamos",
+            "fecha": "2019-12-08"
+        },
+        {
+            "titulo": "La moneda del club chesscoin",
+            "imgSrc": ["../../../assets/imagenes/chesscoin/chesscoin-frente.jpg",
+                "../../../assets/imagenes/chesscoin/chesscoin-reverso.jpg",
+                "../../../assets/imagenes/chesscoin/chesscoin-frente.jpg"],
+            "texto": "Los chesscoins son una moneda virtual que estamos implementando en el club desde hace unos meses. Para tener chesscoins, solo tenes jugar y ganar. En breve publicaremos los beneficios.",
+            "fecha": "2019-12-08"
+        }
+    ]
+}

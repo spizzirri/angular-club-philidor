@@ -13,7 +13,7 @@ export class NewsService {
 
   getNews(): Observable<Object> {
 
-    return this.http.get('../../assets/news/201906-s1.json');
+    return this.http.get('../../assets/noticias/list.json');
   }
 
   getSchoolNews(): Observable<Object> {

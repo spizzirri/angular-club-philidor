@@ -10,9 +10,9 @@ import { NewsResponse } from 'src/app/models/NewsResponse';
 })
 export class EscuelitaComponent implements OnInit {
 
-  bigNews: Array<BigCard>
+  noticias: Array<BigCard>
   constructor(private newService: NewsService) {
-    this.bigNews = new Array<BigCard>()
+    this.noticias = new Array<BigCard>()
   }
 
   ngOnInit() {
@@ -23,7 +23,7 @@ export class EscuelitaComponent implements OnInit {
     this.newService.getSchoolNews().subscribe(
       (data: NewsResponse) => {
 
-        data.bigNews.forEach(element => { this.bigNews.push(element) });
+        data.noticias.forEach(element => { this.noticias.push(element) });
       }
     )
   }

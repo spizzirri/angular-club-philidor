@@ -1,6 +1,6 @@
 export interface BigCard{
-    title:String,
-    imgSrc:String,
-    text:String,
-    date:String
+    titulo:String,
+    imgSrc:Array<string>,
+    texto:String,
+    fecha:String
 }

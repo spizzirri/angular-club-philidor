@@ -19,6 +19,8 @@ import { NewsService } from './services/news.service';
 import { FormsModule } from '@angular/forms';
 import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
+import { BorrarespaciosPipe } from './components/home/borrarespacios.pipe';
+import { SanitizerPipe } from './sanitizer.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ChesscoinComponent } from './chesscoin/chesscoin.component';
     PlayerComponent,
     TableComponent,
     EscuelitaComponent,
-    ChesscoinComponent
+    ChesscoinComponent,
+    BorrarespaciosPipe,
+    SanitizerPipe
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BigCard } from 'src/app/models/big-card';
+declare let $
 
 @Component({
   selector: 'app-big-card',
@@ -11,7 +12,11 @@ export class BigCardComponent implements OnInit {
   @Input("data") data: BigCard;
   @Input("id") id: number;
 
-  constructor() { }
+  constructor() { 
+    $('.carousel').carousel({
+      "interval":4000
+    });
+  }
 
   ngOnInit() {
     console.log('bigCard: ', this.data);

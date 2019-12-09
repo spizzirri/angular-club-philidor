@@ -11,28 +11,22 @@ import { NewsResponse } from 'src/app/models/NewsResponse';
 })
 export class HomeComponent implements OnInit {
 
-  bigNews:Array<BigCard>
-  smallNews:Array<SmallCard>
+  noticias:Array<BigCard>
 
   constructor(
     private newService:NewsService
   ) {
-    this.bigNews = new Array<BigCard>()
-    this.smallNews = new Array<SmallCard>()
+    this.noticias = new Array<BigCard>()
   }
 
   ngOnInit() {
 
-    this.getNews();
+    this.getNoticias();
   }
 
-  getNews(){
+  getNoticias(){
     this.newService.getNews().subscribe(
-      (data:NewsResponse)=>{
-
-        data.bigNews.forEach(element => { this.bigNews.push(element) });
-        data.smallNews.forEach(element => { this.smallNews.push(element) });
-      }
+      (data:NewsResponse)=> data.noticias.forEach(element => { this.noticias.push(element) })
     )
   }
 }
