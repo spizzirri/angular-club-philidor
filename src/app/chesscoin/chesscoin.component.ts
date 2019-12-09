@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChesscoinService } from './chesscoin.service';
 import { Player } from '../models/player';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-chesscoin',
@@ -13,12 +14,14 @@ export class ChesscoinComponent implements OnInit {
   people:Array<Player>;
   imagenChessCoinRey:string;
 
-  constructor(private chesscoinService:ChesscoinService) { 
+  constructor(private chesscoinService:ChesscoinService, 
+              private scrollService:ScrollService) { 
     this.people = new Array<Player>();
     this.imagenChessCoinRey = '../../assets/chesscoin/chesscoin2.jpg';
   }
 
   ngOnInit() {
+    this.scrollService.setScrollTop();
     this.getChessCoin();
   }
 

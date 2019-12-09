@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Torneo } from './tournament';
 import { TournamentService } from './tournament.service';
 import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-tournaments',
@@ -15,7 +16,9 @@ export class TournamentsComponent implements OnInit {
   torneosInternacionales:Array<Torneo>;
   linkTorneoActual:string;
   mostrarSpinner:Boolean;
-  constructor(private tournamentService:TournamentService, private sanitizer:DomSanitizer) { 
+  constructor(private tournamentService:TournamentService, 
+              private sanitizer:DomSanitizer,
+              private scrollService:ScrollService) { 
     this.mostrarSpinner = false;
     this.torneosPhilidor = new Array<Torneo>();
     this.torneosFAOGBA = new Array<Torneo>();
@@ -57,6 +60,7 @@ export class TournamentsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.scrollService.setScrollTop();
   }
 
 }

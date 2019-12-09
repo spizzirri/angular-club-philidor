@@ -3,6 +3,7 @@ import { BigCard } from 'src/app/models/big-card';
 import { SmallCard } from 'src/app/models/small-card';
 import { NewsService } from 'src/app/services/news.service';
 import { NewsResponse } from 'src/app/models/NewsResponse';
+import { ScrollService } from 'src/app/scroll.service';
 
 @Component({
   selector: 'app-home',
@@ -14,13 +15,14 @@ export class HomeComponent implements OnInit {
   noticias:Array<BigCard>
 
   constructor(
-    private newService:NewsService
+    private newService:NewsService,
+    private scrollService:ScrollService
   ) {
     this.noticias = new Array<BigCard>()
   }
 
   ngOnInit() {
-
+    this.scrollService.setScrollTop();
     this.getNoticias();
   }
 
