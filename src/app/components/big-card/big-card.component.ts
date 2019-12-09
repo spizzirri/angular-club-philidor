@@ -18,9 +18,6 @@ export class BigCardComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-    console.log('bigCard: ', this.data);
-    console.log('bigCard: ', this.id);
-  }
+  ngOnInit() {}
 
 }
