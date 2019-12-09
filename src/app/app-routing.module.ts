@@ -22,7 +22,7 @@ const routesDevelop: Routes = [
 ];
 
 const routesProd: Routes = [
-  { path: 'home', component: ChesscoinComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
