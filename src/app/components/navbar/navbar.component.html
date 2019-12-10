@@ -8,22 +8,22 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionEscuelita" >
-        <a class="nav-link" routerLink="/escuelita" routerLinkActive="active">Escuelita</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('escuelita')" routerLinkActive="active">Escuelita</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionTorneos">
-        <a class="nav-link" routerLink="/tournament" routerLinkActive="active">Torneos</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('tournament')" routerLinkActive="active">Torneos</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionRanking">
-        <a class="nav-link" routerLink="/ranking" routerLinkActive="active">Ranking</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('ranking')" routerLinkActive="active">Ranking</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionChesscoin">
-        <a class="nav-link" routerLink="/chesscoin" routerLinkActive="active">Chesscoin</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('chesscoin')" routerLinkActive="active">Chesscoin</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionFotos">
-        <a class="nav-link" routerLink="/photos" routerLinkActive="active">Fotos</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('photos')" routerLinkActive="active">Fotos</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionHistoria">
-        <a class="nav-link" routerLink="/history" routerLinkActive="active">Historia</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('history')" routerLinkActive="active">Historia</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionContacto">
         <a class="nav-link" href="http://wa.me/541158333942" target="_blank">Contacto <i
@@ -32,11 +32,9 @@
     </ul>
   </div>
 </nav>
-<div class="text-center alert alert-danger"> 
-      Pagina en construccion. Se agradecen <a href="http://wa.me/541168150978" target="_blank"> sugerencias, colaboraciones <i class="fab fa-whatsapp fa-1x"></i></a> y donaciones  
-      <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=145839931-d8c71f76-7972-4958-869d-3c211a6c3b62" target="_blank"> $50 </a>, 
-      <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=145839931-7ba66fb0-e861-4044-add6-f899e9198d3b" target="_blank"> $100 </a>
-      <i class="fas fa-money-bill-wave"></i>
-      - Spizzirri Damian
-    </div>
+<div class="text-center alert alert-danger">  
+  Pagina en construccion    
+  <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=145839931-d8c71f76-7972-4958-869d-3c211a6c3b62" target="_blank"> Donar 
+  <i class="fas fa-money-bill-wave"></i> </a>
+</div>
 </div>
