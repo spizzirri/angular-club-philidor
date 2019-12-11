@@ -12,6 +12,7 @@ import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 const routesDevelop: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
+  { path: 'tournament/:idTorneo', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'photos', component: PhotosComponent },
@@ -24,6 +25,7 @@ const routesDevelop: Routes = [
 const routesProd: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
+  { path: 'tournament/:idTorneo', component: TournamentsComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'history', component: HistoryComponent },
