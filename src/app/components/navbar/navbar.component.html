@@ -1,32 +1,33 @@
 <div class="sticky-top">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand" routerLink="/home" routerLinkActive="active">Philidor</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+  <a class="navbar-brand" routerLink="/home" routerLinkActive="active">&#9815;Philidor&#9813;</a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
+    Menu
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionEscuelita" >
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('escuelita')" routerLinkActive="active">Escuelita</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('escuelita')" routerLinkActive="active">&#9817; Escuelita</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionTorneos">
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('tournament')" routerLinkActive="active">Torneos</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('tournament')" routerLinkActive="active">&#9817; Torneos</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionRanking">
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('ranking')" routerLinkActive="active">Ranking</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('ranking')" routerLinkActive="active">&#9817; Ranking</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionChesscoin">
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('chesscoin')" routerLinkActive="active">Chesscoin</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('chesscoin')" routerLinkActive="active">&#9817; Chesscoin</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionFotos">
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('photos')" routerLinkActive="active">Fotos</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('photos')" routerLinkActive="active">&#9817; Fotos</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionHistoria">
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('history')" routerLinkActive="active">Historia</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('history')" routerLinkActive="active">&#9817; Historia</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionContacto">
-        <a class="nav-link" href="http://wa.me/541158333942" target="_blank">Contacto <i
+        <a class="nav-link" href="http://wa.me/541158333942" target="_blank">&#9817; Contacto <i
             class="fab fa-whatsapp fa-1x"></i></a>
       </li>
     </ul>

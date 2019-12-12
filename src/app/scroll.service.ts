@@ -8,9 +8,12 @@ export class ScrollService {
 
   constructor(private router:Router) { }
 
-  setScrollTop() {
+  setScrollTop(elemento?:string) {
     this.router.events.subscribe((event: NavigationEnd) => {
-      window.scroll(0, 0);
+      if(!elemento)
+        window.scroll(0, 0);
+      else
+        document.getElementById(elemento).scrollIntoView();  
     });
   }
 }
