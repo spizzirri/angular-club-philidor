@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RankingService } from 'src/app/services/ranking.service';
+import { RankingService } from 'src/app/ranking/ranking.service';
 import { Player } from 'src/app/models/player';
-import { Row } from 'src/app/models/row';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -17,8 +17,11 @@ export class RankingComponent implements OnInit {
   people: Array<Player>;
 
   constructor(
-    private rankingService: RankingService
-  ) { }
+    private rankingService: RankingService,
+    private titleService:Title
+  ) { 
+    this.titleService.setTitle("Club Philidor - Ranking")
+  }
 
   ngOnInit() {
 

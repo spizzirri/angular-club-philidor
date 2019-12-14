@@ -1,4 +1,4 @@
-export interface BigCard{
+export interface Noticia{
     titulo:String,
     imgSrc:Array<string>,
     texto:String,

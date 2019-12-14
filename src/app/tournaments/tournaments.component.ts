@@ -1,8 +1,9 @@
-import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Torneo } from './tournament';
 import { TournamentService } from './tournament.service';
 import { ScrollService } from '../scroll.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-tournaments',
@@ -18,7 +19,9 @@ export class TournamentsComponent implements OnInit, AfterViewInit {
   mostrarSpinner:Boolean;
   constructor(private tournamentService:TournamentService, 
               private scrollService:ScrollService,
-              private activatedRoute:ActivatedRoute) { 
+              private activatedRoute:ActivatedRoute,
+              private titleService:Title) {
+    this.titleService.setTitle("Club Philidor - Torneos")
     this.mostrarSpinner = false;
     this.torneosPhilidor = new Array<Torneo>();
     this.torneosFAOGBA = new Array<Torneo>();

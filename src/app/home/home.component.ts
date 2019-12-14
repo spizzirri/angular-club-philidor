@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { BigCard } from 'src/app/models/big-card';
-import { SmallCard } from 'src/app/models/small-card';
 import { NewsService } from 'src/app/services/news.service';
 import { NewsResponse } from 'src/app/models/NewsResponse';
 import { ScrollService } from 'src/app/scroll.service';
+import { Title } from '@angular/platform-browser';
+import { Noticia } from '../models/noticia';
 
 @Component({
   selector: 'app-home',
@@ -12,13 +12,15 @@ import { ScrollService } from 'src/app/scroll.service';
 })
 export class HomeComponent implements OnInit {
 
-  noticias:Array<BigCard>
+  noticias:Array<Noticia>
 
   constructor(
     private newService:NewsService,
-    private scrollService:ScrollService
+    private scrollService:ScrollService,
+    private titleService:Title
   ) {
-    this.noticias = new Array<BigCard>()
+    this.titleService.setTitle("Club Philidor")
+    this.noticias = new Array<Noticia>()
   }
 
   ngOnInit() {

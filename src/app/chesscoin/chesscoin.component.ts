@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChesscoinService } from './chesscoin.service';
 import { Player } from '../models/player';
 import { ScrollService } from '../scroll.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-chesscoin',
@@ -15,7 +16,10 @@ export class ChesscoinComponent implements OnInit {
   imagenChessCoinRey:string;
 
   constructor(private chesscoinService:ChesscoinService, 
-              private scrollService:ScrollService) { 
+              private scrollService:ScrollService,
+              private titleService:Title) {
+ 
+    this.titleService.setTitle("Club Philidor - Chesscoin")            
     this.people = new Array<Player>();
     this.imagenChessCoinRey = '../../assets/chesscoin/chesscoin2.jpg';
   }

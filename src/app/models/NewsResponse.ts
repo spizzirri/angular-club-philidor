@@ -1,6 +1,6 @@
-import { New } from './new';
+import { Noticia } from './noticia';
 
 export interface NewsResponse{
 
-    noticias:Array<New>;
+    noticias:Array<Noticia>;
 }
