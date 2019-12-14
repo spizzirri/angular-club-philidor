@@ -15,7 +15,7 @@
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('tournament')" routerLinkActive="active">&#9817; Torneos</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionRanking">
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('ranking')" routerLinkActive="active">&#9817; Ranking</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('ranking')" routerLinkActive="active">&#9817; Ranking Philidor </a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionChesscoin">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('chesscoin')" routerLinkActive="active">&#9817; Chesscoin</a>
@@ -27,8 +27,7 @@
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('history')" routerLinkActive="active">&#9817; Historia</a>
       </li>
       <li class="nav-item" *ngIf="mostrarEnProduccion.opcionContacto">
-        <a class="nav-link" href="http://wa.me/541158333942" target="_blank">&#9817; Contacto <i
-            class="fab fa-whatsapp fa-1x"></i></a>
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('contacto')" routerLinkActive="active">&#9817; Contacto </a>
       </li>
     </ul>
   </div>

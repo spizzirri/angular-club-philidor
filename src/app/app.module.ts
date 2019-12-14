@@ -19,6 +19,7 @@ import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
 import { SanitizerPipe } from './sanitizer.pipe';
 import { NoticiaComponent } from './components/noticia/noticia.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,9 @@ import { NoticiaComponent } from './components/noticia/noticia.component';
     EscuelitaComponent,
     ChesscoinComponent,
     NoticiaComponent,
+    ContactoComponent,
     BorrarespaciosPipe,
-    SanitizerPipe
+    SanitizerPipe,
   ],
   imports: [
     BrowserModule,
