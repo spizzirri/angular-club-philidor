@@ -1,20 +1,24 @@
 {
     "philidor":[
         {
-            "nombre": "TORNEO RAPIDO DE DICIEMBRE I",
-            "link":"tnr496653"
-        },
-        {
-            "nombre":"TORNEO DE FIN DE AÑO 2019 4ª CATEGORIA",
-            "link": "tnr495009"
+            "nombre": "TORNEO DE FIN DE AÑO 2019 1ra Y 2da CATEGORIA",
+            "link":"tnr495007"
         },
         {
             "nombre":"TORNEO DE FIN DE AÑO 2019 3ª CATEGORIA",
             "link": "tnr495008"
         },
         {
-            "nombre": "TORNEO DE FIN DE AÑO 2019 1ra Y 2da CATEGORIA",
-            "link":"tnr495007"
+            "nombre":"TORNEO DE FIN DE AÑO 2019 4ª CATEGORIA",
+            "link": "tnr495009"
+        },
+        {
+            "nombre":"TORNEO RAPIDO DE DICIEMBRE II",
+            "link":"tnr498914"
+        },
+        {
+            "nombre": "TORNEO RAPIDO DE DICIEMBRE I",
+            "link":"tnr496653"
         },
         {
             "nombre": "TORNEO RAPIDO DE NOVIEMBRE IV",
