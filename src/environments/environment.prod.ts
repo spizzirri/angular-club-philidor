@@ -2,7 +2,7 @@ export const environment = {
   production: true,
   opcionEscuelita:false,
   opcionTorneos:true,
-  opcionPartidas:true,
+  opcionPartidas:false,
   opcionFotos:false,
   opcionRanking:true,
   opcionChesscoin:true,
