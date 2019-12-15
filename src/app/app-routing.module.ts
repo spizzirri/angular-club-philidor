@@ -10,12 +10,16 @@ import { environment } from '../environments/environment';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
+import { JugarComponent } from './jugar/jugar.component';
+import { TacticaComponent } from './tactica/tactica.component';
  
 const routesDevelop: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
   { path: 'tournament/:idTorneo', component: TournamentsComponent },
   { path: 'partidas', component: VisorpgnComponent },
+  { path: 'jugar', component: JugarComponent },
+  { path: 'tactica', component: TacticaComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'photos', component: PhotosComponent },
@@ -31,6 +35,8 @@ const routesProd: Routes = [
   { path: 'tournament', component: TournamentsComponent },
   { path: 'tournament/:idTorneo', component: TournamentsComponent },
   { path: 'partidas', component: VisorpgnComponent },
+  { path: 'jugar', component: JugarComponent },
+  { path: 'tactica', component: TacticaComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'history', component: HistoryComponent },

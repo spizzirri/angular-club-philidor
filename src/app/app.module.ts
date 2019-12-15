@@ -21,6 +21,8 @@ import { SanitizerPipe } from './sanitizer.pipe';
 import { NoticiaComponent } from './components/noticia/noticia.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
+import { JugarComponent } from './jugar/jugar.component';
+import { TacticaComponent } from './tactica/tactica.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
     BorrarespaciosPipe,
     SanitizerPipe,
     VisorpgnComponent,
+    JugarComponent,
+    TacticaComponent,
   ],
   imports: [
     BrowserModule,
