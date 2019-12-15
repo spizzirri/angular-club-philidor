@@ -20,6 +20,7 @@ import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
 import { SanitizerPipe } from './sanitizer.pipe';
 import { NoticiaComponent } from './components/noticia/noticia.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     ContactoComponent,
     BorrarespaciosPipe,
     SanitizerPipe,
+    VisorpgnComponent,
   ],
   imports: [
     BrowserModule,
