@@ -9,11 +9,13 @@ import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { environment } from '../environments/environment';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
  
 const routesDevelop: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
   { path: 'tournament/:idTorneo', component: TournamentsComponent },
+  { path: 'partidas', component: VisorpgnComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'photos', component: PhotosComponent },
@@ -28,6 +30,7 @@ const routesProd: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tournament', component: TournamentsComponent },
   { path: 'tournament/:idTorneo', component: TournamentsComponent },
+  { path: 'partidas', component: VisorpgnComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'history', component: HistoryComponent },

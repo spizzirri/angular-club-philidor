@@ -13,7 +13,6 @@ export class ChesscoinComponent implements OnInit {
 
   nameToFind: string = null;
   people:Array<Player>;
-  imagenChessCoinRey:string;
 
   constructor(private chesscoinService:ChesscoinService, 
               private scrollService:ScrollService,
@@ -21,7 +20,6 @@ export class ChesscoinComponent implements OnInit {
  
     this.titleService.setTitle("Club Philidor - Chesscoin")            
     this.people = new Array<Player>();
-    this.imagenChessCoinRey = '../../assets/chesscoin/chesscoin2.jpg';
   }
 
   ngOnInit() {
