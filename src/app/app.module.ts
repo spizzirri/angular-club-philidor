@@ -13,7 +13,7 @@ import { TableComponent } from './components/table/table.component';
 import { RankingService } from './ranking/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './services/news.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
@@ -23,6 +23,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
 import { JugarComponent } from './jugar/jugar.component';
 import { TacticaComponent } from './tactica/tactica.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { TacticaComponent } from './tactica/tactica.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [
     NewsService,
