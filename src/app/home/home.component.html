@@ -1,6 +1,6 @@
 <div class="container animated fadeIn">
   <h2> Ultimas novedades </h2>
-
+  <a class="btn btn-info" [routerLink]="['/contacto']"><i class="far fa-envelope"></i> Envianos un comentario <i class="far fa-envelope"></i></a>
   <div class="row">
 
     <app-noticia class="col-md-6 col-xs-12" *ngFor="let noticia of noticias; let i=index" [data]="noticia" [id]="i">
