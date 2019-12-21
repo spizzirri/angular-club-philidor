@@ -31,7 +31,8 @@ export class ContactoComponent implements OnInit {
   enviarComentario(){
     const comentarios:Comentario = {
       nombre: this.comentarioForm.controls["nombreDelVisitante"].value,
-      mensaje: this.comentarioForm.controls["comentarioDelVisitante"].value
+      mensaje: this.comentarioForm.controls["comentarioDelVisitante"].value,
+      fecha: new Date()
     }
     this.enviandoComentario = true;
     this.firebaseService.setDocumento("comentarios",  comentarios)

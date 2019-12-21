@@ -1,5 +1,28 @@
 <div class="container">
     <div class="row">
+        <div class="col-md-5 col-xs-12">
+            <h3> Enviar un comentario </h3>
+            <p class="alert alert-info" *ngIf="enviandoComentario"> Enviando comentario </p>
+            <p class="alert alert-success" *ngIf="mensajeEnviado"> Mensaje enviado </p>
+            <form (ngSubmit)="enviarComentario()" [formGroup]="comentarioForm" *ngIf="!mensajeEnviado">
+                <div class="form-group">
+                    <label for="nombreDelVisitante">Nombre</label>
+                    <input id="nombreDelVisitante" 
+                        formControlName="nombreDelVisitante" 
+                        type="text" class="form-control" 
+                        placeholder="Escribi tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="comentarioDelVisitante">Comentario / Consulta</label>
+                    <textarea class="form-control" 
+                            id="comentarioDelVisitante" 
+                            formControlName="comentarioDelVisitante"
+                            rows="5"
+                            placeholder="Escribi tu comentario"></textarea>
+                </div>
+                <button class="btn btn-primary btn-lg btn-block" [disabled]="enviandoComentario" type="submit">Enviar</button>
+                </form>
+        </div>
         <div class="col-md-7 col-xs-12">
             <h3> Contacto </h3>
             <p>
@@ -35,29 +58,6 @@
                         <a href="https://wa.me/541168150978" target="_blank"> +54 11 6815 0978 </a>
                     </span>
                 </p>
-        </div>
-        <div class="col-md-5 col-xs-12">
-            <h3> Enviar un comentario </h3>
-            <p class="alert alert-info" *ngIf="enviandoComentario"> Enviando comentario </p>
-            <p class="alert alert-success" *ngIf="mensajeEnviado"> Mensaje enviado </p>
-            <form (ngSubmit)="enviarComentario()" [formGroup]="comentarioForm" *ngIf="!mensajeEnviado">
-                <div class="form-group">
-                    <label for="nombreDelVisitante">Nombre</label>
-                    <input id="nombreDelVisitante" 
-                        formControlName="nombreDelVisitante" 
-                        type="text" class="form-control" 
-                        placeholder="Escribi tu nombre">
-                </div>
-                <div class="form-group">
-                    <label for="comentarioDelVisitante">Comentario / Consulta</label>
-                    <textarea class="form-control" 
-                            id="comentarioDelVisitante" 
-                            formControlName="comentarioDelVisitante"
-                            rows="5"
-                            placeholder="Escribi tu comentario"></textarea>
-                </div>
-                <button class="btn btn-primary btn-lg btn-block" [disabled]="enviandoComentario" type="submit">Enviar</button>
-                </form>
         </div>
     </div>
 </div>

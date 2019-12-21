@@ -1,4 +1,5 @@
 export interface Comentario{
     nombre:string,
-    mensaje:string
+    mensaje:string,
+    fecha:Date
   }
