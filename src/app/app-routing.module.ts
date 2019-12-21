@@ -8,7 +8,7 @@ import { HistoryComponent } from './history/history.component';
 import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { environment } from '../environments/environment';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
+import { ContactoComponent } from './contacto/contacto.component';
 import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
 import { JugarComponent } from './jugar/jugar.component';
 import { TacticaComponent } from './tactica/tactica.component';

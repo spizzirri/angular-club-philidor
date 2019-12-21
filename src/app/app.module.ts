@@ -19,7 +19,7 @@ import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
 import { SanitizerPipe } from './sanitizer.pipe';
 import { NoticiaComponent } from './components/noticia/noticia.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
+import { ContactoComponent } from './contacto/contacto.component';
 import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
 import { JugarComponent } from './jugar/jugar.component';
 import { TacticaComponent } from './tactica/tactica.component';
