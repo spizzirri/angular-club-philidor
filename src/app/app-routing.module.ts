@@ -32,8 +32,8 @@ const routesDevelop: Routes = [
 
 const routesProd: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'tournament', component: TorneosComponent },
-  { path: 'tournament/:idTorneo', component: TorneosComponent },
+  { path: 'torneos', component: TorneosComponent },
+  { path: 'torneos/:idTorneo', component: TorneosComponent },
   { path: 'partidas', component: VisorpgnComponent },
   { path: 'jugar', component: JugarComponent },
   { path: 'tactica', component: TacticaComponent },
