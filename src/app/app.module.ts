@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { PhotosComponent } from './components/photos/photos.component';
-import { TournamentsComponent } from './tournaments/tournaments.component';
+import { TorneosComponent } from './torneos/torneos.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { HistoryComponent } from './history/history.component';
 import { TableComponent } from './components/table/table.component';
@@ -33,7 +33,7 @@ import { environment } from 'src/environments/environment';
     NavbarComponent,
     HomeComponent,
     PhotosComponent,
-    TournamentsComponent,
+    TorneosComponent,
     RankingComponent,
     HistoryComponent,
     TableComponent,

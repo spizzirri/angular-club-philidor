@@ -1,23 +1,23 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Torneo } from './tournament';
-import { TournamentService } from './tournament.service';
+import { Torneo } from './torneo';
+import { TorneosService } from './torneos.service';
 import { ScrollService } from '../scroll.service';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-tournaments',
-  templateUrl: './tournaments.component.html',
-  styleUrls: ['./tournaments.component.css']
+  selector: 'app-torneos',
+  templateUrl: './torneos.component.html',
+  styleUrls: ['./torneos.component.css']
 })
-export class TournamentsComponent implements OnInit, AfterViewInit {
+export class TorneosComponent implements OnInit, AfterViewInit {
 
   torneosPhilidor:Array<Torneo>;
   torneosFAOGBA:Array<Torneo>;
   torneosInternacionales:Array<Torneo>;
   linkTorneoActual:string;
   mostrarSpinner:Boolean;
-  constructor(private tournamentService:TournamentService, 
+  constructor(private torneosService:TorneosService, 
               private scrollService:ScrollService,
               private activatedRoute:ActivatedRoute,
               private titleService:Title) {
@@ -26,7 +26,7 @@ export class TournamentsComponent implements OnInit, AfterViewInit {
     this.torneosPhilidor = new Array<Torneo>();
     this.torneosFAOGBA = new Array<Torneo>();
     this.torneosInternacionales = new Array<Torneo>();
-    this.tournamentService.obtenerTorneos()
+    this.torneosService.obtenerTorneos()
       .subscribe((data)=> {
         this.torneosPhilidor = data.philidor;
         this.torneosFAOGBA = data.faogba;

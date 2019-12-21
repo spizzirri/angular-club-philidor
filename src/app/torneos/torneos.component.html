@@ -14,7 +14,7 @@
           <div class="card-body">
             <ul class="nav flex-column">
               <li class="nav-item" *ngFor="let torneo of torneosPhilidor">
-                <a class="nav-link" [routerLink]="['/tournament', torneo.link]">&#9815; {{torneo.nombre}}</a>
+                <a class="nav-link" [routerLink]="['/torneos', torneo.link]">&#9815; {{torneo.nombre}}</a>
               </li>
             </ul>
           </div>
@@ -33,7 +33,7 @@
           <div class="card-body">
             <ul class="nav flex-column">
               <li class="nav-item" *ngFor="let torneo of torneosFAOGBA">
-                <a class="nav-link" [routerLink]="['/tournament', torneo.link]">&#9815; {{torneo.nombre}}</a>
+                <a class="nav-link" [routerLink]="['/torneos', torneo.link]">&#9815; {{torneo.nombre}}</a>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@
             <div class="card-body">
               <ul class="nav flex-column">
                 <li class="nav-item" *ngFor="let torneo of torneosInternacionales">
-                  <a class="nav-link" [routerLink]="['/tournament', torneo.link]" >&#9815; {{torneo.nombre}}</a>
+                  <a class="nav-link" [routerLink]="['/torneos', torneo.link]" >&#9815; {{torneo.nombre}}</a>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TournamentsComponent } from './tournaments/tournaments.component';
+import { TorneosComponent } from './torneos/torneos.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { HomeComponent } from './home/home.component';
 import { RankingComponent } from './ranking/ranking.component';
@@ -15,8 +15,8 @@ import { TacticaComponent } from './tactica/tactica.component';
  
 const routesDevelop: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'tournament', component: TournamentsComponent },
-  { path: 'tournament/:idTorneo', component: TournamentsComponent },
+  { path: 'torneos', component: TorneosComponent },
+  { path: 'torneos/:idTorneo', component: TorneosComponent },
   { path: 'partidas', component: VisorpgnComponent },
   { path: 'jugar', component: JugarComponent },
   { path: 'tactica', component: TacticaComponent },
@@ -32,8 +32,8 @@ const routesDevelop: Routes = [
 
 const routesProd: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'tournament', component: TournamentsComponent },
-  { path: 'tournament/:idTorneo', component: TournamentsComponent },
+  { path: 'tournament', component: TorneosComponent },
+  { path: 'tournament/:idTorneo', component: TorneosComponent },
   { path: 'partidas', component: VisorpgnComponent },
   { path: 'jugar', component: JugarComponent },
   { path: 'tactica', component: TacticaComponent },
