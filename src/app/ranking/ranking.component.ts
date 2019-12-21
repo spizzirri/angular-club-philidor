@@ -26,7 +26,7 @@ export class RankingComponent implements OnInit {
   ngOnInit() {
 
     this.year = 2019;
-    this.month = 6;
+    this.month = 12;
     this.getRanking()
 
   }
@@ -48,7 +48,7 @@ export class RankingComponent implements OnInit {
   getRanking() {
 
     this.rankingService.getRanking(this.year, this.month).subscribe(
-      (data: Array<Player>) => this.people = data.sort((a: Player, b: Player): number => a.ranking.classic > b.ranking.classic ? 1 : -1),
+      (data: Array<Player>) => this.people = data.sort((a: Player, b: Player): number => a.ranking.classic.elo < b.ranking.classic.elo ? 1 : -1),
       error => this.people = new Array<Player>()
     )
   }
