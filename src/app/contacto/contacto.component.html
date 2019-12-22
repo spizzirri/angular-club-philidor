@@ -1,63 +1,47 @@
 <div class="container">
     <div class="row">
         <div class="col-md-5 col-xs-12">
-            <h3> Enviar un comentario </h3>
-            <p class="alert alert-info" *ngIf="enviandoComentario"> Enviando comentario </p>
-            <p class="alert alert-success" *ngIf="mensajeEnviado"> Mensaje enviado </p>
-            <form (ngSubmit)="enviarComentario()" [formGroup]="comentarioForm" *ngIf="!mensajeEnviado">
-                <div class="form-group">
-                    <label for="nombreDelVisitante">Nombre</label>
-                    <input id="nombreDelVisitante" 
-                        formControlName="nombreDelVisitante" 
-                        type="text" class="form-control" 
-                        placeholder="Escribi tu nombre">
-                </div>
-                <div class="form-group">
-                    <label for="comentarioDelVisitante">Comentario / Consulta</label>
-                    <textarea class="form-control" 
-                            id="comentarioDelVisitante" 
-                            formControlName="comentarioDelVisitante"
-                            rows="5"
-                            placeholder="Escribi tu comentario"></textarea>
-                </div>
-                <button class="btn btn-primary btn-lg btn-block" [disabled]="enviandoComentario" type="submit">Enviar</button>
-                </form>
+            <app-mensaje></app-mensaje>
         </div>
         <div class="col-md-7 col-xs-12">
             <h3> Contacto </h3>
             <p>
-                    <span class="nav-link text-success">
-                        <i class="fab fa-whatsapp fa-1x"></i>
-                        <a href="https://wa.me/541158333942" target="_blank"> +54 11 5833 3942 </a>
-                    </span>
-                    <span class="nav-link text-info">
-                        <i class="fab fa-facebook fa-1x"></i>
-                        <a href="https://www.facebook.com/clubdeajedrez.philidor" target="_blank"> Clubdeajedrez Philidor</a>
-                    </span>
-                    <span class="nav-link">
-                        <i class="fas fa-map fa-1x"></i> 
-                        9 Julio 613, Moron, Buenos Aires 
-                    </span>
-            
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.9905309616374!2d-58.62086614863852!3d-34.6549420676223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc766187f1475%3A0x61df38ba9b88c298!2s9%20de%20Julio%20613%2C%20B1708JDM%20Mor%C3%B3n%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1576332581401!5m2!1ses-419!2sar" 
-                            width="600" 
-                            height="450" 
-                            frameborder="0" 
-                            style="border:0;" 
-                            allowfullscreen="">
-                    </iframe>
-                </p>
-                <p>
-                    Desarrollador de la pagina
-                    <span class="nav-link text-primary"> 
-                        <i class="fas fa-envelope fa-1x"></i>
-                        damianspizzirri@gmail.com 
-                    </span>
-                    <span class="nav-link text-success">
-                        <i class="fab fa-whatsapp fa-1x"></i>
-                        <a href="https://wa.me/541168150978" target="_blank"> +54 11 6815 0978 </a>
-                    </span>
-                </p>
+                <span class="nav-link text-success">
+                    <i class="fab fa-whatsapp fa-1x"></i>
+                    <a href="https://wa.me/541158333942" target="_blank"> +54 11 5833 3942 </a>
+                </span>
+                <span class="nav-link text-info">
+                    <i class="fab fa-facebook fa-1x"></i>
+                    <a href="https://www.facebook.com/clubdeajedrez.philidor" target="_blank"> Clubdeajedrez Philidor</a>
+                </span>
+                <span class="nav-link">
+                    <i class="fas fa-map fa-1x"></i> 
+                    9 Julio 613, Moron, Buenos Aires 
+                </span>
+        
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.9905309616374!2d-58.62086614863852!3d-34.6549420676223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc766187f1475%3A0x61df38ba9b88c298!2s9%20de%20Julio%20613%2C%20B1708JDM%20Mor%C3%B3n%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1576332581401!5m2!1ses-419!2sar" 
+                        width="600" 
+                        height="450" 
+                        frameborder="0" 
+                        style="border:0;" 
+                        allowfullscreen="">
+                </iframe>
+            </p>
+            <p>
+                Desarrollador de la pagina
+                <span class="nav-link text-primary"> 
+                    <i class="fas fa-envelope fa-1x"></i>
+                    damianspizzirri@gmail.com 
+                </span>
+                <span class="nav-link text-primary"> 
+                    <i class="fas fa-globe-americas"></i>
+                    <a href="http://damianspizzirri.com"> http://damianspizzirri.com </a>
+                </span>
+                <span class="nav-link text-success">
+                    <i class="fab fa-whatsapp fa-1x"></i>
+                    <a href="https://wa.me/541168150978" target="_blank"> +54 11 6815 0978 </a>
+                </span>
+            </p>
         </div>
     </div>
 </div>

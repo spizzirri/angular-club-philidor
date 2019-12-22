@@ -26,6 +26,7 @@ import { TacticaComponent } from './tactica/tactica.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
+import { MensajeComponent } from './components/mensaje/mensaje.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { environment } from 'src/environments/environment';
     VisorpgnComponent,
     JugarComponent,
     TacticaComponent,
+    MensajeComponent,
   ],
   imports: [
     BrowserModule,
