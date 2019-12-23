@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { FirebaseService } from 'src/app/firebase.service';
+import { FirebaseService } from 'src/app/transversal/services/firebase.service';
 import { Comentario } from 'src/app/models/comentario';
 
 @Component({

@@ -1,8 +1,8 @@
-import { SanitizerPipe } from './sanitizer.pipe';
+import { SanitizerPipe } from "./sanitizer.pipe";
 
 describe('SanitizerPipe', () => {
   it('create an instance', () => {
-    const pipe = new SanitizerPipe();
+    const pipe = new SanitizerPipe(null);
     expect(pipe).toBeTruthy();
   });
 });

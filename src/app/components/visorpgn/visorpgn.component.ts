@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CargadorDeScriptsService } from 'src/app/cargadorDeScripts.service.js';
+import { CargadorDeScriptsService } from 'src/app/transversal/services/cargadorDeScripts.service.js';
 import { Title } from '@angular/platform-browser';
 
 @Component({

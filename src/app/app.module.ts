@@ -12,11 +12,11 @@ import { HistoryComponent } from './history/history.component';
 import { TableComponent } from './components/table/table.component';
 import { RankingService } from './ranking/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NoticiasService } from './services/noticias.service';
+import { NoticiasService } from './home/noticias.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
-import { SanitizerPipe } from './sanitizer.pipe';
+import { SanitizerPipe } from './transversal/pipes/sanitizer.pipe';
 import { NoticiaComponent } from './components/noticia/noticia.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
@@ -27,7 +27,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { MensajeComponent } from './components/mensaje/mensaje.component';
-import { StoragePipe } from './storage.pipe';
+import { StoragePipe } from './transversal/pipes/storage.pipe';
 
 @NgModule({
   declarations: [

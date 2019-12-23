@@ -1,5 +1,5 @@
 import { Ranking } from './ranking';
-import { ChessCoin } from '../chess-coin';
+import { ChessCoin } from './chess-coin';
 
 export interface Player {
     name: string,

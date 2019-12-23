@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { FirebaseService } from './firebase.service';
+import { FirebaseService } from '../services/firebase.service';
 
 @Pipe({
   name: 'storage'
