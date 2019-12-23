@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsService } from 'src/app/services/news.service';
-import { NewsResponse } from 'src/app/models/NewsResponse';
+import { NoticiasService } from 'src/app/services/noticias.service';
 import { ScrollService } from 'src/app/scroll.service';
 import { Title } from '@angular/platform-browser';
 import { Noticia } from '../models/noticia';
@@ -15,12 +14,12 @@ export class HomeComponent implements OnInit {
   noticias:Array<Noticia>
 
   constructor(
-    private newService:NewsService,
+    private noticiasService:NoticiasService,
     private scrollService:ScrollService,
     private titleService:Title
   ) {
-    this.titleService.setTitle("Club Philidor")
-    this.noticias = new Array<Noticia>()
+    this.titleService.setTitle("Club Philidor");
+    this.noticias = new Array<Noticia>();
   }
 
   ngOnInit() {
@@ -29,8 +28,12 @@ export class HomeComponent implements OnInit {
   }
 
   getNoticias(){
-    this.newService.getNews().subscribe(
-      (data:NewsResponse)=> data.noticias.forEach(element => { this.noticias.push(element) })
+    this.noticiasService.getNoticias("noticias").subscribe(
+      (noticias:Array<Noticia>)=> { 
+        noticias.forEach(element => this.noticias.push(element));
+        this.noticias = this.noticias.sort((a:Noticia, b:Noticia)=> -1*a.fecha.localeCompare(b.fecha))
+      },
+      (err)=>console.error("Ocurrio un error al obtener las noticias ", err)
     )
   }
 }

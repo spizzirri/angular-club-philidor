@@ -5,7 +5,6 @@ import { PhotosComponent } from './components/photos/photos.component';
 import { HomeComponent } from './home/home.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { HistoryComponent } from './history/history.component';
-import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { environment } from '../environments/environment';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -24,7 +23,6 @@ const routesDevelop: Routes = [
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'photos', component: PhotosComponent },
   { path: 'history', component: HistoryComponent },
-  { path: 'escuelita', component: EscuelitaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent }

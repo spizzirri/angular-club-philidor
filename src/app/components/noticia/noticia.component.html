@@ -13,13 +13,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img [src]="data.imgSrc[0]" class="d-block w-100" alt="...">
+              <img [src]="data.imagenes[0] | storage | async" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img [src]="data.imgSrc[1]" class="d-block w-100" alt="...">
+              <img [src]="data.imagenes[1] | storage | async" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img [src]="data.imgSrc[2]" class="d-block w-100" alt="...">
+              <img [src]="data.imagenes[2] | storage | async" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" [href]="'#' + data.titulo | borrarespacios" role="button" data-slide="prev">

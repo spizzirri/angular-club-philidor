@@ -12,9 +12,8 @@ import { HistoryComponent } from './history/history.component';
 import { TableComponent } from './components/table/table.component';
 import { RankingService } from './ranking/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NewsService } from './services/news.service';
+import { NoticiasService } from './services/noticias.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { EscuelitaComponent } from './components/escuelita/escuelita.component';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
 import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
 import { SanitizerPipe } from './sanitizer.pipe';
@@ -25,8 +24,10 @@ import { JugarComponent } from './jugar/jugar.component';
 import { TacticaComponent } from './tactica/tactica.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { MensajeComponent } from './components/mensaje/mensaje.component';
+import { StoragePipe } from './storage.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,6 @@ import { MensajeComponent } from './components/mensaje/mensaje.component';
     RankingComponent,
     HistoryComponent,
     TableComponent,
-    EscuelitaComponent,
     ChesscoinComponent,
     NoticiaComponent,
     ContactoComponent,
@@ -48,6 +48,7 @@ import { MensajeComponent } from './components/mensaje/mensaje.component';
     JugarComponent,
     TacticaComponent,
     MensajeComponent,
+    StoragePipe,
   ],
   imports: [
     BrowserModule,
@@ -56,10 +57,11 @@ import { MensajeComponent } from './components/mensaje/mensaje.component';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireStorageModule
   ],
   providers: [
-    NewsService,
+    NoticiasService,
     RankingService
   ],
   bootstrap: [AppComponent]
