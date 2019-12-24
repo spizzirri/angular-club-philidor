@@ -1,6 +1,6 @@
 export interface Noticia{
     titulo:string,
-    imgSrc:Array<string>,
+    imagenes:Array<string>,
     texto:string,
     fecha:string
 }
