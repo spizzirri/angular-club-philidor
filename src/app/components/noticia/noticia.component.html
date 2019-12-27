@@ -37,7 +37,7 @@
       <div *ngIf="data.texto && data.texto.length > 0" class="col-sm-12 col-md-4">
         <div class="card-body">
           <h5 class="card-title">{{ data.titulo }}</h5>
-          <p class="card-text"> {{ data.texto }} </p>
+          <p class="card-text" [innerHTML]="data.texto"> </p>
           <p class="card-text text-right" *ngIf="data.link">
             <a [href]="data.link | sanitizer" target="_blank"> Ver detalles </a>
           </p>
