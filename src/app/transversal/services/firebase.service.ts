@@ -13,7 +13,7 @@ export class FirebaseService {
               private storage:AngularFireStorage) { }
 
   getDocumentos(coleccion:string):Observable<any>{
-    return this.db.collection(coleccion).valueChanges();
+    return this.db.collection(coleccion, ref => ref.limit(4).orderBy('fecha', 'desc')).valueChanges();
   }
 
   setDocumento(coleccion:string, documento:Comentario){
