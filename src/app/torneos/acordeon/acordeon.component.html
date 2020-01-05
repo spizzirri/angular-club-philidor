@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-header" [id]="'heading' + titulo | borrarespacios">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" 
+                data-toggle="collapse" 
+                [attr.data-target]="'#collapse' + titulo | borrarespacios" 
+                aria-expanded="true" 
+                [attr.aria-controls]="'collapse' + titulo | borrarespacios">
+
+            {{titulo}}
+        </button>
+        </h5>
+    </div>
+
+    <div [id]="'collapse' + titulo | borrarespacios" 
+        class="collapse" 
+        [attr.aria-labelledby]="'heading' + titulo | borrarespacios" 
+        data-parent="#accordion">
+
+        <div class="card-body scroll">
+            <ul class="nav flex-column">
+                <li class="nav-item" *ngFor="let item of lista">
+                    <a class="nav-link" [routerLink]="['/torneos', item.link]">&#9815; {{item.nombre}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

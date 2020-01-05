@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NoticiasService } from './home/noticias.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChesscoinComponent } from './chesscoin/chesscoin.component';
-import { BorrarespaciosPipe } from './home/borrarespacios.pipe';
+import { BorrarespaciosPipe } from './transversal/pipes/borrarespacios.pipe';
 import { SanitizerPipe } from './transversal/pipes/sanitizer.pipe';
 import { NoticiaComponent } from './components/noticia/noticia.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -28,6 +28,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { MensajeComponent } from './components/mensaje/mensaje.component';
 import { StoragePipe } from './transversal/pipes/storage.pipe';
+import { AcordeonComponent } from './torneos/acordeon/acordeon.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { StoragePipe } from './transversal/pipes/storage.pipe';
     TacticaComponent,
     MensajeComponent,
     StoragePipe,
+    AcordeonComponent,
   ],
   imports: [
     BrowserModule,

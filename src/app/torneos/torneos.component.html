@@ -4,64 +4,10 @@
 <div class="row">
 <section class="col-sm-12 col-md-3">
   <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              PHILIDOR
-            </button>
-          </h5>
-        </div>
-    
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            <ul class="nav flex-column">
-              <li class="nav-item" *ngFor="let torneo of torneosPhilidor">
-                <a class="nav-link" [routerLink]="['/torneos', torneo.link]">&#9815; {{torneo.nombre}}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              FAOGBA
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <ul class="nav flex-column">
-              <li class="nav-item" *ngFor="let torneo of torneosFAOGBA">
-                <a class="nav-link" [routerLink]="['/torneos', torneo.link]">&#9815; {{torneo.nombre}}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Philidor por el mundo
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              <ul class="nav flex-column">
-                <li class="nav-item" *ngFor="let torneo of torneosInternacionales">
-                  <a class="nav-link" [routerLink]="['/torneos', torneo.link]" >&#9815; {{torneo.nombre}}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </div>
+      <app-acordeon [titulo]="'PHILIDOR'" [lista]="torneosPhilidor"></app-acordeon>
+      <app-acordeon [titulo]="'FAOGBA'" [lista]="torneosFAOGBA"></app-acordeon>
+      <app-acordeon [titulo]="'Philidor por el mundo'" [lista]="torneosInternacionales"></app-acordeon>
+  </div>
 </section>
 
 <article class="col-md-9" id="chessresult">
