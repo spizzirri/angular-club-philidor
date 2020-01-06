@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Torneo } from '../torneo';
+import { Torneo } from '../../torneo';
 
 @Component({
   selector: 'app-acordeon',

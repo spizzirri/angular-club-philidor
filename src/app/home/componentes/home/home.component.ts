@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NoticiasService } from 'src/app/home/noticias.service';
+import { NoticiasService } from 'src/app/home/servicios/noticias.service';
 import { ScrollService } from 'src/app/transversal/services/scroll.service';
 import { Title } from '@angular/platform-browser';
-import { Noticia } from '../models/noticia';
+import { Noticia } from '../../../transversal/modelos/noticia';
 
 @Component({
   selector: 'app-home',

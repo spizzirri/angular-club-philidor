@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RankingService } from 'src/app/ranking/ranking.service';
-import { Player } from 'src/app/models/player';
+import { RankingService } from 'src/app/ranking/servicios/ranking.service';
+import { Player } from 'src/app/transversal/modelos/player';
 import { Title } from '@angular/platform-browser';
 
 

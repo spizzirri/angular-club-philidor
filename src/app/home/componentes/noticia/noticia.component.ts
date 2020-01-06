@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Noticia } from 'src/app/models/noticia';
+import { Noticia } from 'src/app/transversal/modelos/noticia';
 declare let $
 
 @Component({

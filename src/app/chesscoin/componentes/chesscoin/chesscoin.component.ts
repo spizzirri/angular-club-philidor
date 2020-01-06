@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ChesscoinService } from './chesscoin.service';
-import { Player } from '../models/player';
-import { ScrollService } from '../transversal/services/scroll.service';
+import { ChesscoinService } from '../../servicios/chesscoin.service';
+import { Player } from '../../../transversal/modelos/player';
+import { ScrollService } from '../../../transversal/services/scroll.service';
 import { Title } from '@angular/platform-browser';
 
 @Component({

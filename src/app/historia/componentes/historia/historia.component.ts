@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { FirebaseService } from '../transversal/services/firebase.service';
+import { FirebaseService } from '../../../transversal/services/firebase.service';
 import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-history',
-  templateUrl: './history.component.html',
-  styleUrls: ['./history.component.css']
+  templateUrl: './historia.component.html',
+  styleUrls: ['./historia.component.css']
 })
-export class HistoryComponent implements OnInit {
+export class HistoriaComponent implements OnInit {
 
   imagenFachadaClub:Observable<any>;
   constructor(private titleService:Title,

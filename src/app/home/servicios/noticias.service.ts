@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { FirebaseService } from '../transversal/services/firebase.service';
+import { FirebaseService } from '../../transversal/services/firebase.service';
 
 @Injectable({
   providedIn: 'root'

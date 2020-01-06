@@ -3,32 +3,31 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { PhotosComponent } from './components/photos/photos.component';
-import { TorneosComponent } from './torneos/torneos.component';
-import { RankingComponent } from './ranking/ranking.component';
-import { HistoryComponent } from './history/history.component';
-import { TableComponent } from './components/table/table.component';
-import { RankingService } from './ranking/ranking.service';
+import { NavbarComponent } from './transversal/componentes/navbar/navbar.component';
+import { HomeComponent } from './home/componentes/home/home.component';
+import { PhotosComponent } from './home/componentes/photos/photos.component';
+import { TorneosComponent } from './torneos/componentes/torneos/torneos.component';
+import { RankingComponent } from './ranking/componentes/ranking/ranking.component';
+import { HistoriaComponent } from './historia/componentes/historia/historia.component';
+import { TableComponent } from './transversal/componentes/table/table.component';
+import { RankingService } from './ranking/servicios/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NoticiasService } from './home/noticias.service';
+import { NoticiasService } from './home/servicios/noticias.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ChesscoinComponent } from './chesscoin/chesscoin.component';
+import { ChesscoinComponent } from './chesscoin/componentes/chesscoin/chesscoin.component';
 import { BorrarespaciosPipe } from './transversal/pipes/borrarespacios.pipe';
 import { SanitizerPipe } from './transversal/pipes/sanitizer.pipe';
-import { NoticiaComponent } from './components/noticia/noticia.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { VisorpgnComponent } from './components/visorpgn/visorpgn.component';
-import { JugarComponent } from './jugar/jugar.component';
-import { TacticaComponent } from './tactica/tactica.component';
+import { NoticiaComponent } from './home/componentes/noticia/noticia.component';
+import { ContactoComponent } from './contacto/componentes/contacto/contacto.component';
+import { JugarComponent } from './jugar/componentes/jugar/jugar.component';
+import { TacticaComponent } from './tactica/componentes/tactica.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
-import { MensajeComponent } from './components/mensaje/mensaje.component';
+import { MensajeComponent } from './transversal/componentes/mensaje/mensaje.component';
 import { StoragePipe } from './transversal/pipes/storage.pipe';
-import { AcordeonComponent } from './torneos/acordeon/acordeon.component';
+import { AcordeonComponent } from './torneos/componentes/acordeon/acordeon.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +37,13 @@ import { AcordeonComponent } from './torneos/acordeon/acordeon.component';
     PhotosComponent,
     TorneosComponent,
     RankingComponent,
-    HistoryComponent,
+    HistoriaComponent,
     TableComponent,
     ChesscoinComponent,
     NoticiaComponent,
     ContactoComponent,
     BorrarespaciosPipe,
     SanitizerPipe,
-    VisorpgnComponent,
     JugarComponent,
     TacticaComponent,
     MensajeComponent,

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { FirebaseService } from 'src/app/transversal/services/firebase.service';
-import { Comentario } from 'src/app/models/comentario';
+import { Comentario } from 'src/app/transversal/modelos/comentario';
 
 @Component({
   selector: 'app-mensaje',

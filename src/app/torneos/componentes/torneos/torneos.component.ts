@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Torneo } from './torneo';
-import { TorneosService } from './torneos.service';
-import { ScrollService } from '../transversal/services/scroll.service';
+import { Torneo } from '../../torneo';
+import { TorneosService } from '../../servicios/torneos.service';
+import { ScrollService } from '../../../transversal/services/scroll.service';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
