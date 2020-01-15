@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RankingService } from 'src/app/ranking/servicios/ranking.service';
 import { Player } from 'src/app/transversal/modelos/player';
 import { Title } from '@angular/platform-browser';
+import { Ranking } from 'src/app/transversal/modelos/ranking';
 
 
 @Component({
@@ -25,8 +26,8 @@ export class RankingComponent implements OnInit {
 
   ngOnInit() {
 
-    this.year = 2019;
-    this.month = 12;
+    this.year = 2020;
+    this.month = 1;
     this.getRanking()
 
   }
@@ -38,8 +39,8 @@ export class RankingComponent implements OnInit {
     return true;
   }
 
-  addBadgeByNumber(number: number) {
-    if (number > 0)
+  addBadgeByNumber(ranking: Ranking) {
+    if (ranking.classic.variacion > 0 || ranking.rapid.variacion > 0)
       return "badge badge-success";
     else
       return "badge badge-danger";

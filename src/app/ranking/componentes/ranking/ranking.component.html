@@ -4,7 +4,7 @@
   <a class="btn btn-info" [routerLink]="['/contacto']"><i class="far fa-envelope"></i> Envianos un comentario <i class="far fa-envelope"></i></a>
 
   <div class="text-center alert alert-info"> 
-      Datos actualizados al 20 de Diciembre de 2019
+      Datos actualizados al 14 de Enero de 2020
   </div> 
 
   <div class="row">
@@ -30,17 +30,17 @@
           </thead>
           <tbody>
             <tr *ngFor="let one of people; let i=index" 
-                [ngClass]="{'text-muted':one.ranking.classic.variacion === 0,
-                            'border border-success': one.ranking.classic.variacion !== 0}" (click)="showPlayer(row)">
+                [ngClass]="{'text-muted':one.ranking.classic.variacion === 0 && one.ranking.rapid.variacion === 0,
+                            'border border-success': one.ranking.classic.variacion !== 0 || one.ranking.rapid.variacion !== 0}" (click)="showPlayer(row)">
               <ng-container *ngIf="checkByWord(one)">
                 <th scope="row">{{ i }}</th>
                 <td>{{ one.surname }}, {{ one.name }}</td>
                 <td> <span *ngIf="one.ranking.classic.variacion"
-                    [ngClass]="addBadgeByNumber(one.ranking.classic.variacion)">{{ one.ranking.classic.variacion }}</span>
+                    [ngClass]="addBadgeByNumber(one.ranking)">{{ one.ranking.classic.variacion }}</span>
                 </td>
                 <td>{{ one.ranking.classic.elo }}</td>
                 <td> <span *ngIf="one.ranking.rapid.variacion"
-                    [ngClass]="addBadgeByNumber(one.ranking.classic.variacion)">{{ one.ranking.rapid.variacion }}</span>
+                    [ngClass]="addBadgeByNumber(one.ranking)">{{ one.ranking.rapid.variacion }}</span>
                 </td>
                 <td>{{ one.ranking.rapid.elo }}</td>
               </ng-container>

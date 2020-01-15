@@ -1,6 +1,18 @@
 {
     "philidor":[
         {
+            "nombre": "VII TORNEO ABIERTO HOMENAJE M.I. LUIS MARCOS BRONSTEIN ZONA B",
+            "link": "tnr507057"
+        },
+        {
+            "nombre": "VII TORNEO ABIERTO HOMENAJE M.I. LUIS MARCOS BRONSTEIN ZONA A",
+            "link": "tnr504219"
+        },
+        {
+            "nombre": "TORNEO RAPIDO ENERO I CLUB PHILIDOR 2020",
+            "link": "tnr506350"
+        },
+        {
             "nombre":"TORNEO RAPIDO APERTURA DE ACTIVIDADES 2020",
             "link":"tnr504536"
         },
@@ -124,6 +136,10 @@
         }
     ],
     "internacionales":[
+        {
+            "nombre":"MATCH SUB-2050 CIRCULO DE AJEDREZ BALLESTER",
+            "link":"tnr505230"
+        },
         {
             "nombre":"CAMPEONATO ARGENTINO SENIOR S-50",
             "link":"Tnr486324"
