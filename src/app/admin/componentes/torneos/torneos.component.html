@@ -1,0 +1,31 @@
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <h2> Agregar nuevo torneo </h2>
+                <form [formGroup]="formulario" (ngSubmit)="guardarTorneo($event)">
+                <div class="row">
+                    <label class="col-md-6 col-xs-12" for="nombre">Nombre del torneo: </label>
+                    <input class="col-md-6 col-xs-12" type="text" placeholder="nombre del torneo" formControlName="nombre" name="nombre" id="nombre">
+                </div>
+                <div class="row">
+                    <label class="col-md-6 col-xs-12" for="link">Link:</label>
+                    <input class="col-md-6 col-xs-12" type="text" placeholder="identificador del torneo" formControlName="link" name="link" id="link">
+                </div>
+                <div class="row">
+                    <label class="col-md-6 col-xs-12" for="fechaInicio">Fecha de inicio: <i>(AAAAMMDD)</i> </label>
+                    <input class="col-md-6 col-xs-12" type="text" pattern="20[0-9]{2}[0-9]{2}[0-9]{2}" title="Formato: AAAAMMDD" placeholder="fecha de inicio del torneo" formControlName="fechaInicio" name="fechaInicio" id="fechaInicio">
+                </div>
+                <div class="row">
+                    <label class="col-md-6 col-xs-12" for="organizador">Organizador:</label>
+                    <input class="col-md-6 col-xs-12" type="text" placeholder="organizador del torneo" formControlName="organizador" name="organizador" id="organizador">
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" [disabled]="formulario.invalid" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <h2> Torneos cargados </h2>
+        </div>
+    </div>
+</div>
