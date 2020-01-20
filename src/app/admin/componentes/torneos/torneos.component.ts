@@ -11,6 +11,7 @@ export class TorneosComponent implements OnInit {
 
   formulario:FormGroup;
   torneos:Array<any>
+  organizadores: Array<string> = ["Philidor", "FAOGBA", "Resto del mundo"];
 
   constructor(private formBuilder:FormBuilder,
               private firebaseService:FirebaseService) {
@@ -32,14 +33,13 @@ export class TorneosComponent implements OnInit {
   }
 
   public guardarTorneo(event: Event){
-    console.log(this.formulario);
     this.firebaseService.setDocumento("torneos", this.formulario.value);
     this.construirFormulario();
   }
 
   public obtenerTorneos(){
     this.firebaseService.getDocumentos("torneos")
-      .subscribe((torneos)=> { this.torneos = torneos; console.log(torneos); });
+      .subscribe((torneos)=> this.torneos = torneos);
   }
 
   public eliminarTorneo(idTorneo:string){
