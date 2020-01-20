@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FirebaseService } from 'src/app/core/servicios/firebase.service';
 import { TorneosService } from 'src/app/core/servicios/torneos.service';
 
 @Component({
