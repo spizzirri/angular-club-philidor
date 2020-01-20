@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FirebaseService } from 'src/app/core/servicios/firebase.service';
+import { TorneosService } from 'src/app/core/servicios/torneos.service';
 
 @Component({
   selector: 'app-torneos',
@@ -14,7 +15,7 @@ export class TorneosComponent implements OnInit {
   organizadores: Array<string> = ["Philidor", "FAOGBA", "Resto del mundo"];
 
   constructor(private formBuilder:FormBuilder,
-              private firebaseService:FirebaseService) {
+              private torneosService:TorneosService) {
     this.torneos = new Array<any>();
     this.construirFormulario();
     this.obtenerTorneos();
@@ -33,16 +34,16 @@ export class TorneosComponent implements OnInit {
   }
 
   public guardarTorneo(event: Event){
-    this.firebaseService.setDocumento("torneos", this.formulario.value);
+    this.torneosService.guardarTorneo(this.formulario.value);
     this.construirFormulario();
   }
 
   public obtenerTorneos(){
-    this.firebaseService.getDocumentos("torneos")
+    this.torneosService.obtenerTorneos()
       .subscribe((torneos)=> this.torneos = torneos);
   }
 
   public eliminarTorneo(idTorneo:string){
-    this.firebaseService.deleteDocumento("torneos", idTorneo);
+    this.torneosService.eliminarTorneo(idTorneo);
   }
 }
