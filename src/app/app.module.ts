@@ -28,6 +28,7 @@ import { environment } from 'src/environments/environment';
 import { MensajeComponent } from './transversal/componentes/mensaje/mensaje.component';
 import { StoragePipe } from './transversal/pipes/storage.pipe';
 import { AcordeonComponent } from './torneos/componentes/acordeon/acordeon.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { AcordeonComponent } from './torneos/componentes/acordeon/acordeon.compo
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    CoreModule
   ],
   providers: [
     NoticiasService,

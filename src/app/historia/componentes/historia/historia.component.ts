@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { FirebaseService } from '../../../transversal/services/firebase.service';
+import { FirebaseService } from '../../../core/servicios/firebase.service';
 import { Observable } from 'rxjs';
 
 @Component({
