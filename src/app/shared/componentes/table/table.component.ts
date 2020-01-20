@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RankingService } from 'src/app/ranking/servicios/ranking.service';
-import { Row } from 'src/app/transversal/modelos/row';
+import { Row } from 'src/app/shared/modelos/row';
 
 @Component({
   selector: 'app-table',

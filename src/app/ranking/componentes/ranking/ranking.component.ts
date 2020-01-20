@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RankingService } from 'src/app/ranking/servicios/ranking.service';
-import { Player } from 'src/app/transversal/modelos/player';
+import { Player } from 'src/app/shared/modelos/player';
 import { Title } from '@angular/platform-browser';
-import { Ranking } from 'src/app/transversal/modelos/ranking';
+import { Ranking } from 'src/app/shared/modelos/ranking';
 
 
 @Component({

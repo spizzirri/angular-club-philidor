@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { Comentario } from '../../transversal/modelos/comentario';
+import { Comentario } from '../../shared/modelos/comentario';
 import { Observable } from 'rxjs';
 import { AngularFireStorage } from '@angular/fire/storage';
 

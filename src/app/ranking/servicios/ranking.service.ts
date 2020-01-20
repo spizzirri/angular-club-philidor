@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { Row } from '../../transversal/modelos/row';
+import { Row } from '../../shared/modelos/row';
 
 @Injectable({
   providedIn: 'root'
