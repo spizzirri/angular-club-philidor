@@ -17,7 +17,9 @@
                 </div>
                 <div class="row">
                     <label class="col-md-6 col-xs-12" for="organizador">Organizador:</label>
-                    <input class="col-md-6 col-xs-12" type="text" placeholder="organizador del torneo" formControlName="organizador" name="organizador" id="organizador">
+                    <select class="col-md-6 col-xs-12" formControlName="organizador" name="organizador" id="organizador">
+                        <option [value]="organizador" *ngFor="let organizador of organizadores">{{organizador}}</option>
+                    </select>
                 </div>
                 <div class="row">
                     <button class="btn btn-primary" [disabled]="formulario.invalid" type="submit">Guardar</button>
@@ -29,6 +31,8 @@
             <div *ngFor="let torneo of torneos; let i = index">
                 <strong> Torneo: </strong> {{ torneo.nombre }}
                 <strong> Fecha: </strong> {{ torneo.fecha }}
+                <strong> Link: </strong> {{ torneo.link }}
+                <strong> Organizador: </strong> {{ torneo.organizador }}
                 <button class="btn btn-danger" (click)="eliminarTorneo(torneo.id)">Eliminar</button>
             </div>
         </div>
