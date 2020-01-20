@@ -1,1 +1,43 @@
-<p>noticias works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <h2> Agregar nueva noticia </h2>
+            <form [formGroup]="formulario" (ngSubmit)="guardarNoticia($event)">
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="titulo">Titulo de la noticia: </label>
+                <input class="col-md-6 col-xs-12" type="text" placeholder="Titulo de la noticia" formControlName="titulo" name="titulo" id="titulo">
+            </div>
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="texto">Texto de la noticia:</label>
+                <textarea rows="7" class="col-md-6 col-xs-12" type="text" placeholder="texto de la noticia" formControlName="texto" name="texto" id="texto"></textarea>
+            </div>
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="fecha">Fecha: <i>(AAAAMMDD)</i> </label>
+                <input class="col-md-6 col-xs-12" type="text" pattern="20[0-9]{2}[0-9]{2}[0-9]{2}" title="Formato: AAAAMMDD" placeholder="fecha de inicio de publicacion" formControlName="fecha" name="fecha" id="fecha">
+            </div>
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="link">Link de detalles:</label>
+                <input class="col-md-6 col-xs-12" type="link" placeholder="Link de detalles" formControlName="link" name="link" id="link">
+            </div>
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="imagen1">Imagen 1:</label>
+                <input class="col-md-6 col-xs-12" type="file" accept="image/png, image/jpeg" formControlName="imagen1" name="imagen1" id="imagen1">
+            </div>
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="imagen2">Imagen 2:</label>
+                <input class="col-md-6 col-xs-12" type="file" accept="image/png, image/jpeg" formControlName="imagen2" name="imagen2" id="imagen2">
+            </div>
+            <div class="row">
+                <label class="col-md-6 col-xs-12" for="imagen3">Imagen 3:</label>
+                <input class="col-md-6 col-xs-12" type="file" accept="image/png, image/jpeg" formControlName="imagen3" name="imagen3" id="imagen3">
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" [disabled]="formulario.invalid" type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <h2> Noticias cargadas </h2>
+    </div>
+</div>
+</div>
