@@ -19,12 +19,24 @@ export class FirebaseService {
       return this.db.collection(coleccion).valueChanges({ idField: "id" });
   }
 
+  getDocumentoById(coleccion:string, idDocumento:string){
+    return this.db.doc(`${coleccion}/${idDocumento}`).valueChanges();
+  }
+
   setDocumento(coleccion:string, documento:Comentario){
     return this.db.collection(coleccion).add(documento);
   }
 
   getMultimedia(carpeta:string, archivo:string){
     return this.storage.ref(`${carpeta}/${archivo}`).getDownloadURL();
+  }
+
+  setMultimedia(carpeta:string, archivo:string, data:any){
+    return this.storage.upload(`${carpeta}/${archivo}`, data);
+  }
+
+  eliminarMultimedia(carpeta:string, archivo:string){
+    return this.storage.ref(`${carpeta}/${archivo}`).delete();
   }
 
   deleteDocumento(coleccion:string, id:string):Promise<void>{

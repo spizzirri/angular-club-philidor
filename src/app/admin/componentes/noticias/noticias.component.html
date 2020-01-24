@@ -21,15 +21,15 @@
             </div>
             <div class="row">
                 <label class="col-md-6 col-xs-12" for="imagen1">Imagen 1:</label>
-                <input class="col-md-6 col-xs-12" type="file" accept="image/png, image/jpeg" formControlName="imagen1" name="imagen1" id="imagen1">
+                <input class="col-md-6 col-xs-12" type="file" (change)="validarArchivo($event)" accept="image/png, image/jpeg" formControlName="imagen1" name="imagen1" id="imagen1">
             </div>
             <div class="row">
                 <label class="col-md-6 col-xs-12" for="imagen2">Imagen 2:</label>
-                <input class="col-md-6 col-xs-12" type="file" accept="image/png, image/jpeg" formControlName="imagen2" name="imagen2" id="imagen2">
+                <input class="col-md-6 col-xs-12" type="file" (change)="validarArchivo($event)" accept="image/png, image/jpeg" formControlName="imagen2" name="imagen2" id="imagen2">
             </div>
             <div class="row">
                 <label class="col-md-6 col-xs-12" for="imagen3">Imagen 3:</label>
-                <input class="col-md-6 col-xs-12" type="file" accept="image/png, image/jpeg" formControlName="imagen3" name="imagen3" id="imagen3">
+                <input class="col-md-6 col-xs-12" type="file" (change)="validarArchivo($event)" accept="image/png, image/jpeg" formControlName="imagen3" name="imagen3" id="imagen3">
             </div>
             <div class="row">
                 <button class="btn btn-primary" [disabled]="formulario.invalid" type="submit">Guardar</button>
@@ -38,6 +38,16 @@
     </div>
     <div class="col-md-6 col-xs-12">
         <h2> Noticias cargadas </h2>
+        <div *ngFor="let noticia of noticias; let i = index">
+            <strong> Titulo: </strong> {{ noticia.titulo }}
+            <strong> Texto: </strong> {{ noticia.texto }}
+            <strong> Link: </strong> {{ noticia.link }}
+            <strong> Fecha: </strong> {{ noticia.fecha }}
+            <strong> Imagen1: </strong> {{ noticia.imagenes? noticia.imagenes[0]: '' }}
+            <strong> Imagen2: </strong> {{ noticia.imagenes? noticia.imagenes[1]: '' }}
+            <strong> Imagen3: </strong> {{ noticia.imagenes? noticia.imagenes[2]: '' }}
+            <button class="btn btn-danger" (click)="eliminarNoticia(noticia.id)">Eliminar</button>
+        </div>
     </div>
 </div>
 </div>
