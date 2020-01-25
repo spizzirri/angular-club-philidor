@@ -10,7 +10,6 @@ import { RankingComponent } from './ranking/componentes/ranking/ranking.componen
 import { HistoriaComponent } from './historia/componentes/historia/historia.component';
 import { RankingService } from './ranking/servicios/ranking.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NoticiasService } from './home/servicios/noticias.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChesscoinComponent } from './chesscoin/componentes/chesscoin/chesscoin.component';
 import { NoticiaComponent } from './home/componentes/noticia/noticia.component';
@@ -53,7 +52,6 @@ import { SharedModule } from './shared/shared.module';
     SharedModule
   ],
   providers: [
-    NoticiasService,
     RankingService
   ],
   bootstrap: [AppComponent]

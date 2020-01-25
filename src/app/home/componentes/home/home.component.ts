@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NoticiasService } from 'src/app/home/servicios/noticias.service';
+import { NoticiasService } from 'src/app/core/servicios/noticias.service';
 import { ScrollService } from 'src/app/core/servicios/scroll.service';
 import { Title } from '@angular/platform-browser';
 import { Noticia } from '../../../shared/modelos/noticia';
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   }
 
   getNoticias(){
-    this.noticiasService.getNoticias("noticias").subscribe(
+    this.noticiasService.obtenerNoticias().subscribe(
       (noticias:Array<Noticia>)=> { 
         noticias.forEach(element => this.noticias.push(element));
         this.noticias = this.noticias.sort((a:Noticia, b:Noticia)=> -1*a.fecha.localeCompare(b.fecha))
