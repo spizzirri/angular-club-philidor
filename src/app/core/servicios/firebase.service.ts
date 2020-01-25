@@ -16,7 +16,7 @@ export class FirebaseService {
     if(limite)
       return this.db.collection(coleccion, ref => ref.limit(limite).orderBy('fecha', 'desc')).valueChanges({ idField: "id" });
     else
-      return this.db.collection(coleccion).valueChanges({ idField: "id" });
+      return this.db.collection(coleccion, ref=> ref.orderBy('fecha', 'desc')).valueChanges({ idField: "id" });
   }
 
   getDocumentoById(coleccion:string, idDocumento:string){

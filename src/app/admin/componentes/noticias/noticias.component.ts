@@ -13,6 +13,7 @@ export class NoticiasComponent implements OnInit {
   formulario:FormGroup;
   imagenes: any[];
   noticias:Array<any>;
+  cantidadDeNoticias:number;
 
   constructor(private formBuilder:FormBuilder,
               private noticiasService:NoticiasService) { 
@@ -47,7 +48,7 @@ export class NoticiasComponent implements OnInit {
 
   public obtenerNoticias(){
     this.noticiasService.obtenerNoticias()
-      .subscribe((noticias)=> this.noticias = noticias);
+      .subscribe((noticias)=> { this.noticias = noticias; this.cantidadDeNoticias = this.noticias.length;});
   }
 
   public eliminarNoticia(idNoticia:string){

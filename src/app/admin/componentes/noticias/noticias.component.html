@@ -32,12 +32,15 @@
                 <input class="col-md-6 col-xs-12" type="file" (change)="validarArchivo($event)" accept="image/png, image/jpeg" formControlName="imagen3" name="imagen3" id="imagen3">
             </div>
             <div class="row">
-                <button class="btn btn-primary" [disabled]="formulario.invalid" type="submit">Guardar</button>
+                <button class="btn btn-primary" 
+                        *ngIf="cantidadDeNoticias <= 10"
+                        [disabled]="formulario.invalid" 
+                        type="submit">Guardar</button>
             </div>
         </form>
     </div>
     <div class="col-md-6 col-xs-12">
-        <h2> Noticias cargadas </h2>
+        <h2> {{ cantidadDeNoticias }} Noticias cargadas </h2>
         <div *ngFor="let noticia of noticias; let i = index">
             <strong> Titulo: </strong> {{ noticia.titulo }}
             <strong> Texto: </strong> {{ noticia.texto }}
