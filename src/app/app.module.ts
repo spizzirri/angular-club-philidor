@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { JugarComponent } from './jugar/componentes/jugar/jugar.component';
-import { TacticaComponent } from './tactica/componentes/tactica.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -16,9 +14,7 @@ import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    JugarComponent,
-    TacticaComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
