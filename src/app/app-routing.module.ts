@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TorneosComponent } from './torneos/componentes/torneos/torneos.component';
-import { PhotosComponent } from './home/componentes/photos/photos.component';
-import { HomeComponent } from './home/componentes/home/home.component';
 import { RankingComponent } from './ranking/componentes/ranking/ranking.component';
 import { HistoriaComponent } from './historia/componentes/historia/historia.component';
 import { environment } from '../environments/environment';
@@ -12,33 +10,32 @@ import { JugarComponent } from './jugar/componentes/jugar/jugar.component';
 import { TacticaComponent } from './tactica/componentes/tactica.component';
  
 const routesDevelop: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) },
   { path: 'torneos', component: TorneosComponent },
   { path: 'torneos/:idTorneo', component: TorneosComponent },
   { path: 'jugar', component: JugarComponent },
   { path: 'tactica', component: TacticaComponent },
-  { path: 'ranking', component: RankingComponent },
+  { path: 'ranking', loadChildren:()=> import('./ranking/ranking.module').then(m=>m.RankingModule) },
   { path: 'chesscoin', component: ChesscoinComponent },
-  { path: 'photos', component: PhotosComponent },
   { path: 'history', component: HistoriaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'admin', loadChildren: ()=> import('./admin/admin.module').then(m=>m.AdminModule) },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: HomeComponent }
+  { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
 ];
 
 const routesProd: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) },
   { path: 'torneos', component: TorneosComponent },
   { path: 'torneos/:idTorneo', component: TorneosComponent },
   { path: 'jugar', component: JugarComponent },
   { path: 'tactica', component: TacticaComponent },
-  { path: 'ranking', component: RankingComponent },
+  { path: 'ranking', loadChildren:()=> import('./ranking/ranking.module').then(m=>m.RankingModule) },
   { path: 'chesscoin', component: ChesscoinComponent },
   { path: 'history', component: HistoriaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: HomeComponent }
+  { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
 ];
 
 @NgModule({
