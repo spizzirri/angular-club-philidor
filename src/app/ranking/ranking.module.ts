@@ -5,6 +5,7 @@ import { RankingRoutingModule } from './ranking-routing.module';
 import { RankingComponent } from './componentes/ranking/ranking.component';
 import { FormsModule } from '@angular/forms';
 import { RankingService } from './servicios/ranking.service';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { RankingService } from './servicios/ranking.service';
   imports: [
     CommonModule,
     RankingRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers:[
     RankingService
