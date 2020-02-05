@@ -27,7 +27,7 @@ export class RankingComponent implements OnInit {
   ngOnInit() {
 
     this.year = 2020;
-    this.month = 1;
+    this.month = 2;
     this.getRanking()
 
   }
