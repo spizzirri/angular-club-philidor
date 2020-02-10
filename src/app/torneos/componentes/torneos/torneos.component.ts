@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Torneo } from '../../torneo';
-import { TorneosService } from '../../servicios/torneos.service';
+import { TorneosService } from '../../../core/servicios/torneos.service';
 import { ScrollService } from '../../../core/servicios/scroll.service';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
@@ -11,6 +11,10 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./torneos.component.css']
 })
 export class TorneosComponent implements OnInit, AfterViewInit {
+
+  private PHILIDOR = "Philidor";
+  private FAOGBA = "FAOGBA";
+  private RESTO_DEL_MUNDO = "Resto del mundo";
 
   torneosPhilidor:Array<Torneo>;
   torneosFAOGBA:Array<Torneo>;
@@ -26,13 +30,9 @@ export class TorneosComponent implements OnInit, AfterViewInit {
     this.torneosPhilidor = new Array<Torneo>();
     this.torneosFAOGBA = new Array<Torneo>();
     this.torneosInternacionales = new Array<Torneo>();
-    this.torneosService.obtenerTorneos()
-      .subscribe((data)=> {
-        this.torneosPhilidor = data.philidor;
-        this.torneosFAOGBA = data.faogba;
-        this.torneosInternacionales = data.internacionales;
-        }
-      );
+    this.torneosService.obtenerTorneosDe(this.PHILIDOR).subscribe(data => this.torneosPhilidor = data);
+    this.torneosService.obtenerTorneosDe(this.FAOGBA).subscribe(data => this.torneosFAOGBA = data);
+    this.torneosService.obtenerTorneosDe(this.RESTO_DEL_MUNDO).subscribe(data=> this.torneosInternacionales = data);
   }
 
   setMostrarSpinner(estado:Boolean){

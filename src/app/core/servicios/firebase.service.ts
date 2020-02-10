@@ -19,6 +19,10 @@ export class FirebaseService {
       return this.db.collection(coleccion, ref=> ref.orderBy('fecha', 'desc')).valueChanges({ idField: "id" });
   }
 
+  getDocumentosConFiltro(coleccion:string, filtro:any){
+    return this.db.collection(coleccion, ref => ref.where(filtro.clave, "==", filtro.valor).limit(10).orderBy('fecha', 'desc')).valueChanges({ idField: "id" });
+  }
+
   getDocumentoById(coleccion:string, idDocumento:string){
     return this.db.doc(`${coleccion}/${idDocumento}`).valueChanges();
   }

@@ -27,6 +27,7 @@ const routesProd: Routes = [
   { path: 'chesscoin', loadChildren:()=>import('./chesscoin/chesscoin.module').then(m=>m.ChesscoinModule) },
   { path: 'historia', loadChildren:()=>import('./historia/historia.module').then(m=>m.HistoriaModule) },
   { path: 'contacto',  loadChildren:()=>import('./contacto/contacto.module').then(m=>m.ContactoModule) },
+  { path: 'admin', loadChildren: ()=> import('./admin/admin.module').then(m=>m.AdminModule) },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
 ];

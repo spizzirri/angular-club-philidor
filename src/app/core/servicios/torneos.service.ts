@@ -13,6 +13,10 @@ export class TorneosService {
     return this.firebaseService.getDocumentos("torneos");
   }
 
+  obtenerTorneosDe(organizador:String):Observable<any>{
+    return this.firebaseService.getDocumentosConFiltro("torneos", { clave: "organizador", valor: organizador });
+  }
+
   guardarTorneo(torneo):Promise<any>{
     return this.firebaseService.setDocumento("torneos", torneo);
   }
