@@ -20,7 +20,7 @@ export class FirebaseService {
   }
 
   getDocumentosConFiltro(coleccion:string, filtro:any){
-    return this.db.collection(coleccion, ref => ref.where(filtro.clave, "==", filtro.valor).limit(10).orderBy('fecha', 'desc')).valueChanges({ idField: "id" });
+    return this.db.collection(coleccion, ref => ref.where(filtro.clave, "==", filtro.valor).limit(15).orderBy('fecha', 'desc')).valueChanges({ idField: "id" });
   }
 
   getDocumentoById(coleccion:string, idDocumento:string){
