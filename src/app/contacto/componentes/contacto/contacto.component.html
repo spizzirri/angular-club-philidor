@@ -1,9 +1,20 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-5 col-xs-12">
+        <div class="col-md-6 col-xs-12">
             <app-mensaje></app-mensaje>
+            <div class="mt-4">
+                <div *ngFor="let comentario of comentarios | async">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{comentario.nombre}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{comentario.fecha.toDate()}}</h6>
+                            <p class="card-text">{{comentario.mensaje}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-7 col-xs-12">
+        <div class="col-md-6 col-xs-12">
             <h3> Contacto </h3>
             <p>
                 <span class="nav-link text-success">
