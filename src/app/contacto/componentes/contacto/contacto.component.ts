@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class ContactoComponent implements OnInit {
 
-  private comentarios:Observable<any>
+  comentarios:Observable<any>
 
   constructor(private titleService:Title,
               private firebaseService: FirebaseService) { 
