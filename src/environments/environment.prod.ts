@@ -1,13 +1,13 @@
 export const environment = {
   production: true,
-  opcionEscuelita:false,
+  opcionEscuelita:true,
   opcionTorneos:true,
   opcionPartidas:false,
   opcionJugar:true,
   opcionTactica:true,
   opcionFotos:false,
   opcionRanking:true,
-  opcionChesscoin:true,
+  opcionChesscoin:false,
   opcionHistoria:true,
   opcionContacto:true,
   firebase: {
