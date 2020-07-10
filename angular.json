@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/angular-club-philidor",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -58,6 +59,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -140,5 +145,8 @@
       }
     }
   },
-  "defaultProject": "angular-club-philidor"
+  "defaultProject": "angular-club-philidor",
+  "cli": {
+    "analytics": "716b0d92-f47c-423c-add4-6edc748bfe7d"
+  }
 }
