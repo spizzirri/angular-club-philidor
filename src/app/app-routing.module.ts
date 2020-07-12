@@ -13,6 +13,7 @@ const routesDevelop: Routes = [
   { path: 'contacto', loadChildren:()=>import('./contacto/contacto.module').then(m=>m.ContactoModule) },
   { path: 'admin', loadChildren: ()=> import('./admin/admin.module').then(m=>m.AdminModule) },
   { path: 'clases', loadChildren:()=> import('./clases/clases.module').then(m=>m.ClasesModule)},
+  { path: 'colaborar', loadChildren:()=> import('./colaborar/colaborar.module').then(m=>m.ColaborarModule)},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
 ];
@@ -28,6 +29,7 @@ const routesProd: Routes = [
   { path: 'contacto',  loadChildren:()=>import('./contacto/contacto.module').then(m=>m.ContactoModule) },
   { path: 'admin', loadChildren: ()=> import('./admin/admin.module').then(m=>m.AdminModule) },
   { path: 'clases', loadChildren:()=> import('./clases/clases.module').then(m=>m.ClasesModule)},
+  { path: 'colaborar', loadChildren:()=> import('./colaborar/colaborar.module').then(m=>m.ColaborarModule)},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
 ];

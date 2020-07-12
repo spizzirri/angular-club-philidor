@@ -10,6 +10,7 @@ export const environment = {
   opcionChesscoin:false,
   opcionHistoria:true,
   opcionContacto:true,
+  opcionColaborar:true,
   firebase: {
     apiKey: "AIzaSyDaqdWIj43RwOB2o_kOP2CzBKZpbecHBbM",
     authDomain: "clubphilidorajedrez.firebaseapp.com",
