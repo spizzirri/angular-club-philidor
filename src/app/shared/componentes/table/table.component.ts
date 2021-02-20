@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { RankingService } from 'src/app/ranking/servicios/ranking.service';
+import { RankingService } from 'src/app/publico/ranking/servicios/ranking.service';
 import { Row } from 'src/app/shared/modelos/row';
 
 @Component({
