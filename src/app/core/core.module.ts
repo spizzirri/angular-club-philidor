@@ -4,7 +4,6 @@ import { FirebaseService } from './servicios/firebase.service';
 import { CargadorDeScriptsService } from './servicios/cargadorDeScripts.service';
 import { ScrollService } from './servicios/scroll.service';
 import { TorneosService } from './servicios/torneos.service';
-import { NoticiasService } from './servicios/noticias.service';
 
 @NgModule({
   declarations: [],
@@ -15,8 +14,7 @@ import { NoticiasService } from './servicios/noticias.service';
     FirebaseService,
     CargadorDeScriptsService,
     ScrollService,
-    TorneosService,
-    NoticiasService
+    TorneosService
   ]
 })
 export class CoreModule { }
