@@ -1,13 +1,16 @@
 export const environment = {
   production: true,
-  opcionEscuelita:true,
-  opcionTorneos:true,
-  opcionJugar:true,
-  opcionTactica:true,
-  opcionRanking:true,
-  opcionHistoria:true,
-  opcionContacto:true,
-  opcionColaborar:true,
+  vistas: {
+    escuelita:true,
+    torneos:true,
+    jugar:false,
+    tactica:false,
+    ranking:true,
+    historia:true,
+    contacto:true,
+    clases:true,
+    colaborar:true
+  },
   firebase: {
     apiKey: "AIzaSyDaqdWIj43RwOB2o_kOP2CzBKZpbecHBbM",
     authDomain: "clubphilidorajedrez.firebaseapp.com",

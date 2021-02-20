@@ -2,37 +2,32 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { environment } from '../../environments/environment';
 
-const routesDevelop: Routes = [
-
+const routes: Routes = [
     { path: '', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) },
-    { path: 'home', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) },
-    { path: 'torneos', loadChildren:()=>import('./torneos/torneos.module').then(m=>m.TorneosModule) },
-    { path: 'jugar', loadChildren:()=>import('./jugar/jugar.module').then(m=>m.JugarModule) },
-    { path: 'tactica', loadChildren:()=>import('./tactica/tactica.module').then(m=>m.TacticaModule) },
-    { path: 'ranking', loadChildren:()=> import('./ranking/ranking.module').then(m=>m.RankingModule) },
-    { path: 'historia', loadChildren:()=>import('./historia/historia.module').then(m=>m.HistoriaModule) },
-    { path: 'contacto', loadChildren:()=>import('./contacto/contacto.module').then(m=>m.ContactoModule) },
-    { path: 'clases', loadChildren:()=> import('./clases/clases.module').then(m=>m.ClasesModule)},
-    { path: 'colaborar', loadChildren:()=> import('./colaborar/colaborar.module').then(m=>m.ColaborarModule)},
-    { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
+    { path: 'home', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
 ];
 
-const routesProd: Routes = [
-    { path: '', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) },
-    { path: 'home', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) },
-    { path: 'torneos', loadChildren:()=>import('./torneos/torneos.module').then(m=>m.TorneosModule) },
-    { path: 'jugar', loadChildren:()=>import('./jugar/jugar.module').then(m=>m.JugarModule) },
-    { path: 'tactica', loadChildren:()=>import('./tactica/tactica.module').then(m=>m.TacticaModule) },
-    { path: 'ranking', loadChildren:()=> import('./ranking/ranking.module').then(m=>m.RankingModule) },
-    { path: 'historia', loadChildren:()=>import('./historia/historia.module').then(m=>m.HistoriaModule) },
-    { path: 'contacto',  loadChildren:()=>import('./contacto/contacto.module').then(m=>m.ContactoModule) },
-    { path: 'clases', loadChildren:()=> import('./clases/clases.module').then(m=>m.ClasesModule)},
-    { path: 'colaborar', loadChildren:()=> import('./colaborar/colaborar.module').then(m=>m.ColaborarModule)},
-    { path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) }
-];
+if(environment.vistas.torneos)
+    routes.push({ path: 'torneos', loadChildren:()=>import('./torneos/torneos.module').then(m=>m.TorneosModule) })
+if(environment.vistas.jugar)
+    routes.push({ path: 'jugar', loadChildren:()=>import('./jugar/jugar.module').then(m=>m.JugarModule) })
+if(environment.vistas.tactica)
+    routes.push({ path: 'tactica', loadChildren:()=>import('./tactica/tactica.module').then(m=>m.TacticaModule) })
+if(environment.vistas.ranking)
+    routes.push({ path: 'ranking', loadChildren:()=> import('./ranking/ranking.module').then(m=>m.RankingModule) })
+if(environment.vistas.historia)
+    routes.push({ path: 'historia', loadChildren:()=>import('./historia/historia.module').then(m=>m.HistoriaModule) })
+if(environment.vistas.contacto)
+    routes.push({ path: 'contacto', loadChildren:()=>import('./contacto/contacto.module').then(m=>m.ContactoModule) })
+if(environment.vistas.clases)
+    routes.push({ path: 'clases', loadChildren:()=> import('./clases/clases.module').then(m=>m.ClasesModule)})
+if(environment.vistas.colaborar)
+    routes.push({ path: 'colaborar', loadChildren:()=> import('./colaborar/colaborar.module').then(m=>m.ColaborarModule)})
+
+routes.push({ path: '**', loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule) })
 
 @NgModule({
-    imports: [RouterModule.forChild(environment.production? routesProd: routesDevelop)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
 export class PublicoRoutingModule { }

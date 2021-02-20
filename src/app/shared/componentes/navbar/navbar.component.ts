@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
        
-  mostrarEnProduccion:any;
+  toggles:any;
   constructor(private router:Router) { 
-    this.mostrarEnProduccion = environment;
+    this.toggles = environment.vistas;
   }
 
   ngOnInit() {

@@ -8,28 +8,28 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionTorneos">
+      <li class="nav-item" *ngIf="toggles.torneos">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('torneos')" routerLinkActive="active">&#9817; Torneos</a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionRanking">
+      <li class="nav-item" *ngIf="toggles.ranking">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('ranking')" routerLinkActive="active">&#9817; Ranking Philidor </a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionEscuelita" >
-        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('clases')" routerLinkActive="active">&#9817; Clases de Ajedrez </a>
+      <li class="nav-item" *ngIf="toggles.clases">
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('clases')" routerLinkActive="active">&#9817; Clases </a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionJugar">
+      <li class="nav-item" *ngIf="toggles.jugar">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('jugar')" routerLinkActive="active">&#9817; Jugar</a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionTactica">
+      <li class="nav-item" *ngIf="toggles.tactica">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('tactica')" routerLinkActive="active">&#9817; Tactica</a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionHistoria">
+      <li class="nav-item" *ngIf="toggles.historia">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('historia')" routerLinkActive="active">&#9817; Historia</a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionContacto">
+      <li class="nav-item" *ngIf="toggles.contacto">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('contacto')" routerLinkActive="active">&#9817; Contacto </a>
       </li>
-      <li class="nav-item" *ngIf="mostrarEnProduccion.opcionColaborar">
+      <li class="nav-item" *ngIf="toggles.colaborar">
         <a class="nav-link" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="navegar('colaborar')" routerLinkActive="active">&#9817; Colaborar </a>
       </li>
     </ul>
