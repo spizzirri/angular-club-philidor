@@ -5,7 +5,6 @@
 export const environment = {
   production: false,
   vistas: {
-     escuelita:true,
      torneos:true,
      ranking:true,
      historia:true,
