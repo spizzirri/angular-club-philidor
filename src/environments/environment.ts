@@ -7,8 +7,6 @@ export const environment = {
   vistas: {
      escuelita:true,
      torneos:true,
-     jugar:false,
-     tactica:false,
      ranking:true,
      historia:true,
      contacto:true,

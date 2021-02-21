@@ -9,10 +9,6 @@ const routes: Routes = [
 
 if(environment.vistas.torneos)
     routes.push({ path: 'torneos', loadChildren:()=>import('./torneos/torneos.module').then(m=>m.TorneosModule) })
-if(environment.vistas.jugar)
-    routes.push({ path: 'jugar', loadChildren:()=>import('./jugar/jugar.module').then(m=>m.JugarModule) })
-if(environment.vistas.tactica)
-    routes.push({ path: 'tactica', loadChildren:()=>import('./tactica/tactica.module').then(m=>m.TacticaModule) })
 if(environment.vistas.ranking)
     routes.push({ path: 'ranking', loadChildren:()=> import('./ranking/ranking.module').then(m=>m.RankingModule) })
 if(environment.vistas.historia)
