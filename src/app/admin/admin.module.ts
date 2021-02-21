@@ -5,13 +5,12 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { TorneosComponent } from './componentes/torneos/torneos.component';
-import { NoticiasComponent } from './componentes/noticias/noticias.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
-  declarations: [AdminComponent, NavbarComponent, TorneosComponent, NoticiasComponent],
+  declarations: [AdminComponent, NavbarComponent, TorneosComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

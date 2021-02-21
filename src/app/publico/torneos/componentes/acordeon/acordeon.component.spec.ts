@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BorrarespaciosPipe } from 'src/app/shared/pipes/borrarespacios.pipe';
 
 import { AcordeonComponent } from './acordeon.component';
 
@@ -8,7 +9,7 @@ describe('AcordionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AcordeonComponent ]
+      declarations: [ AcordeonComponent, BorrarespaciosPipe ]
     })
     .compileComponents();
   }));
