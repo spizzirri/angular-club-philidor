@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { TorneosComponent } from './componentes/torneos/torneos.component';
-import { NoticiasComponent } from './componentes/noticias/noticias.component';
-
 
 const routes: Routes = [
   {
@@ -13,10 +11,6 @@ const routes: Routes = [
       {
         path: 'torneos',
         component: TorneosComponent
-      },
-      {
-        path: 'noticias',
-        component: NoticiasComponent
       }
     ]
   }
